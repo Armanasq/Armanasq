@@ -6,6 +6,7 @@
 <img src="https://gpvc.arturio.dev/Armanasq" alt="profile views">
 
 My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
+<br>
 🔭 I’m currently working on Intelligent Estimation Theory and its application for robot navigation, specifically inertial attitude estimation for aerial vehicles.
 
 ## 🛠️ Skills and Technologies
