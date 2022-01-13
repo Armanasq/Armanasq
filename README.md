@@ -6,7 +6,7 @@
 <img src="https://gpvc.arturio.dev/Armanasq" alt="profile views">
 
 My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
-
+🔭 I’m currently working on Intelligent Estimation Theory and its application for robot navigation, specifically inertial attitude estimation for aerial vehicles.
 
 ## 🛠️ Skills and Technologies
 
@@ -40,7 +40,7 @@ My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the Universit
 
 
 
-## 🙋‍♂️ Connect with me
+## 📫 How to reach me:
 
 <p align="center">
     <a href="https://twitter.com/Armannearu"><img alt="Twitter" title="Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
@@ -48,17 +48,3 @@ My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the Universit
     <a href="https://www.instagram.com/arman_asq/"><img alt="Instagram" title="Instagram" src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
     
 </p>
-<!--
-**Armanasq/Armanasq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
