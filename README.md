@@ -27,7 +27,6 @@ My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the Universit
   <img src="https://github-readme-streak-stats.herokuapp.com?user=Armanasq&theme=highcontrast"/>
 </div>
 
-<details> 
   <summary>💻 GitHub Profile Stats</summary>
   <div align="center">
     <br/>
@@ -36,7 +35,6 @@ My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the Universit
     <br/>
   </div>
   <b>Note:</b> <em>Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.</em>
-</details>
 
 
 
