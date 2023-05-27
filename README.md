@@ -24,7 +24,7 @@ My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the Universit
 ## 📊 My GitHub Statistics
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Armanasq&theme=nightowl"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Armanasq&theme=nightowl&hide_border=true""/>
 </div>
 
   <summary>💻 GitHub Profile Stats</summary>
