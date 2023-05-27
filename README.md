@@ -24,13 +24,13 @@ My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the Universit
 ## 📊 My GitHub Statistics
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Armanasq&theme=nightowl&show_icons=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Armanasq&theme=nightowl"/>
 </div>
 
   <summary>💻 GitHub Profile Stats</summary>
   <div align="center">
     <br/>
-        <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="abxhr's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Armanasq&show_icons=true&count_private=true&theme=cobalt&hide_border=true" height="192px"/></a>
+        <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="abxhr's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Armanasq&count_private=true&theme=cobalt&hide_border=true" height="192px"/></a>
     <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="abxhr's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Armanasq&langs_count=8&layout=compact&theme=cobalt&hide_border=true" height="192px"/></a>
     <br/>
   </div>
