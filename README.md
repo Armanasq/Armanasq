@@ -3,8 +3,7 @@
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 </h2>
 
-<img src="https://gpvc.arturio.dev/Armanasq" alt="profile views">
-![](https://hit.yhype.me/github/profile?user_id=1849174)
+<!-- <img src="https://gpvc.arturio.dev/Armanasq" alt="profile views">-->
 <img src="https://komarev.com/ghpvc/?username=armanasq&color=dc143c" alt="profile views">
 My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
 <br>
