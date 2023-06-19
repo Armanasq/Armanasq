@@ -4,9 +4,8 @@
 </h2>
 
 <img src="https://gpvc.arturio.dev/Armanasq" alt="profile views">
-![](https://komarev.com/ghpvc/?username=your-github-username&color=dc143c)
-
-
+![](https://hit.yhype.me/github/profile?user_id=1849174)
+<img src="https://komarev.com/ghpvc/?username=armanasq&color=dc143c" alt="profile views">
 My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
 <br>
 🔭 I’m currently working on Intelligent Estimation Theory and its application for robot navigation, specifically inertial attitude estimation for aerial vehicles.
