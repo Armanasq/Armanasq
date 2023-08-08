@@ -8,7 +8,7 @@
 
 
 
-My name is Arman Asgharpoor, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
+My name is Arman Asgharpoor Golroudbari, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
 <br>
 🔭 I’m currently working on Intelligent Estimation Theory and its application for robot navigation, specifically inertial attitude estimation for aerial vehicles.
 
