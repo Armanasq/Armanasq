@@ -7,10 +7,60 @@
 <img src="https://komarev.com/ghpvc/?username=armanasq&color=dc143c" alt="profile views">
 
 
+---
 
-My name is Arman Asgharpoor Golroudbari, M.Sc. student of Space Engineering at the University of Tehran with a background in Avionics Engineering 🎓
-<br>
-🔭 I’m currently working on Intelligent Estimation Theory and its application for robot navigation, specifically inertial attitude estimation for aerial vehicles.
+🌌 **Arman Asgharpoor Golroudbari**
+
+🎓 M.Sc. student of Space Engineering at the University of Tehran  
+🔧 Background in Avionics Engineering
+
+🔭 **Current Research Focus:**
+- **Intelligent Estimation Theory**
+- **Application for Robot Navigation**
+- **Inertial Attitude Estimation for Aerial Vehicles**
+
+---
+
+🔬 **Researcher** | 🚀 **Space Enthusiast** | 🧠 **Deep Learning Enthusiast**
+
+I am Arman Asgharpoor Golroudbari, a researcher at Deep Space Initiatives. My passion lies in applying machine learning through interdisciplinary research encompassing flight dynamics, control theory, deep learning, and sensor fusion algorithms.
+
+---
+
+🌐 **Research Collaborations:**
+
+I actively seek opportunities for academic research collaborations, aiming to foster interdisciplinary synergies and engage in innovative knowledge exchange. 🤝💡
+
+---
+
+🛰️ **Research Highlights:**
+
+- **Milky Way Program @ Deep Space Initiative:** Contributed to space transportation system research, addressing pressing space-related issues.
+
+- **Oxford Machine Learning Summer School:** Achieved top rank in the Health and Medicine OxML competition track, focusing on vision-based breast cancer detection.
+
+- **Fuzzy Logic Lab @ University of Tehran:** Developed deep neural networks for visual odometry, enhancing accuracy and performance.
+
+- **Space Lab @ University of Tehran:** Pioneered deep learning-based inertial odometry techniques, leveraging state-of-the-art datasets and optimization tools.
+
+- **Department of Aerospace Eng. @ University of Tehran:** Explored the intriguing world of Quantum Computing and its applications in space.
+
+---
+
+🌍 **Experience Beyond Research:**
+
+I believe in sharing knowledge and experiences:
+
+- **Mentor @ Space Generation Advisory Council:** Providing personalized guidance and support to aspiring space enthusiasts.
+
+- **Martial Arts Instructor @ Iran Martial Arts Federation:** Cultivating communication skills through teaching diverse students.
+
+- **Manager @ Arman Imen Passargad:** Nurturing leadership and management skills in challenging work environments.
+
+- **Teaching Assistant @ University of Tehran:** Imparting practical programming skills to graduate-level students.
+
+---
+
 
 ## 🛠️ Skills and Technologies
 
