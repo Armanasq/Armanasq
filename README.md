@@ -15,9 +15,10 @@
 🔧 Background in Avionics Engineering
 
 🔭 **Current Research Focus:**
+- **Computer Vision | Vision-based Navigation**
 - **Intelligent Estimation Theory**
 - **Application for Robot Navigation**
-- **Inertial Attitude Estimation for Aerial Vehicles**
+- **State Estimation for Autonomous Vehicles**
 
 ---
 
