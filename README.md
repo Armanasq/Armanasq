@@ -1,102 +1,106 @@
-<h2 align="center">
-    Welcome to My Profile! 
-    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-</h2>
-
-<!-- <img src="https://gpvc.arturio.dev/Armanasq" alt="profile views"> -->
-<img src="https://komarev.com/ghpvc/?username=armanasq&color=dc143c" alt="profile views">
-
-
----
-
-🌌 **Arman Asgharpoor Golroudbari**
-
-🎓 M.Sc. student of Space Engineering at the University of Tehran  
-🔧 Background in Avionics Engineering
-
-🔭 **Current Research Focus:**
-- **Computer Vision | Vision-based Navigation**
-- **Intelligent Estimation Theory**
-- **Application for Robot Navigation**
-- **State Estimation for Autonomous Vehicles**
-
----
-
-🔬 **Researcher** | 🚀 **Space Enthusiast** | 🧠 **Deep Learning Enthusiast**
-
-I am Arman Asgharpoor Golroudbari, a researcher at Deep Space Initiatives. My passion lies in applying machine learning through interdisciplinary research encompassing flight dynamics, control theory, deep learning, and sensor fusion algorithms.
-
----
-
-🌐 **Research Collaborations:**
-
-I actively seek opportunities for academic research collaborations, aiming to foster interdisciplinary synergies and engage in innovative knowledge exchange. 🤝💡
-
----
-
-🛰️ **Research Highlights:**
-
-- **Milky Way Program @ Deep Space Initiative:** Contributed to space transportation system research, addressing pressing space-related issues.
-
-- **Oxford Machine Learning Summer School:** Achieved top rank in the Health and Medicine OxML competition track, focusing on vision-based breast cancer detection.
-
-- **Fuzzy Logic Lab @ University of Tehran:** Developed deep neural networks for visual odometry, enhancing accuracy and performance.
-
-- **Space Lab @ University of Tehran:** Pioneered deep learning-based inertial odometry techniques, leveraging state-of-the-art datasets and optimization tools.
-
-- **Department of Aerospace Eng. @ University of Tehran:** Explored the intriguing world of Quantum Computing and its applications in space.
-
----
-
-🌍 **Experience Beyond Research:**
-
-I believe in sharing knowledge and experiences:
-
-- **Mentor @ Space Generation Advisory Council:** Providing personalized guidance and support to aspiring space enthusiasts.
-
-- **Martial Arts Instructor @ Iran Martial Arts Federation:** Cultivating communication skills through teaching diverse students.
-
-- **Manager @ Arman Imen Passargad:** Nurturing leadership and management skills in challenging work environments.
-
-- **Teaching Assistant @ University of Tehran:** Imparting practical programming skills to graduate-level students.
-
----
-
-
-## 🛠️ Skills and Technologies
-
-![](https://img.shields.io/badge/Python-informational?style=flat-square&logo=Python&logoColor=white&color=3776AB)
-![](https://img.shields.io/badge/GitHub-informational?style=flat-sqaure&logo=GitHub&logoColor=white&color=181717)
-![](https://img.shields.io/badge/GitHub%20Pages-%23327FC7.svg?logo=github&logoColor=white)
-![](https://img.shields.io/badge/Arduino-informational?style=flat-square&logo=arduino&logoColor=white&color=00979D)
-![](https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white&color=F7931E)
-![](https://img.shields.io/badge/Pandas-informational?style=flat-square&logo=pandas&logoColor=white&color=150458)
-![](https://img.shields.io/badge/Numpy-informational?style=flat-square&logo=Numpy&logoColor=white&color=013243)
-![](https://img.shields.io/badge/Jupyter-informational?style=flat-square&logo=Jupyter&logoColor=white&color=F37626)
-
-
-## 📊 My GitHub Statistics
-
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Armanasq&theme=nightowl&hide_border=true""/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=500&color=6495ED&center=true&vCenter=true&width=700&lines=Welcome+to+Arman's+Universe+🌌;AI+%2B+Space+Research+Scientist;Where+SLAM+Meets+the+Stars+✨" alt="Typing SVG" />
 </div>
 
-  <summary>💻 GitHub Profile Stats</summary>
-  <div align="center">
-    <br/>
-        <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="abxhr's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Armanasq&count_private=true&theme=cobalt&hide_border=true" height="192px"/></a>
-    <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="abxhr's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Armanasq&langs_count=8&layout=compact&theme=cobalt&hide_border=true" height="192px"/></a>
-    <br/>
-  </div>
-  <b>Note:</b> <em>Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.</em>
-
-
-
-## 📫 How to reach me:
-
 <p align="center">
-    <a href="https://twitter.com/Armannearu"><img alt="Twitter" title="Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
-    <a href="https://www.linkedin.com/in/asgharpoor/"><img alt="Linkedin" title="LinkedIn" src="https://img.shields.io/badge/-Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-    <a href="https://www.instagram.com/arman_asq/"><img alt="Instagram" title="Instagram" src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-    
+    <img src="https://komarev.com/ghpvc/?username=armanasq&color=6495ED" alt="profile views">
 </p>
+
+> *"Whether I'm mapping dynamic environments on Earth or charting the intergalactic medium, SLAM and reconstruction algorithms are where my heart truly lies. It's not just work—it's where science meets adventure! 🚀"*
+
+# 🎓 Academic & Professional Journey
+
+**Arman Asgharpoor Golroudbari, M.Sc.**
+- 📡 Space Engineering Graduate, University of Tehran (GPA: 4.00/4.00)
+- 🛩️ Avionics Engineering Background (GPA: 3.80/4.00)
+- 🔬 Senior AI Research Associate at Rajaei Cardiovascular Center
+- 🤖 AI Research Engineer at MHS Company
+
+## 🌟 Latest Research
+
+### 📝 Publications & Preprints
+- "TE-PINN: Quaternion-Based Orientation Estimation using Transformer-Enhanced Physics-Informed Neural Networks" (ICRA 2025, Under review)
+- "End-to-End Deep Learning Framework for Real-Time Inertial Attitude Estimation using 6DoF IMU" (Measurement, 2023)
+- "Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation" (Arxiv 2023)
+- "The Future of In-Space Manufacturing: A Systematic Review" (75th IAC 2024)
+
+## 🔬 Research Impact
+
+```mermaid
+mindmap
+  root((Research Focus))
+    SLAM & Mapping
+      Dynamic Environment Navigation
+      Intergalactic Medium Mapping
+      Real-time State Estimation
+    AI & Deep Learning
+      Physics-Informed Neural Networks
+      Self-adaptive Systems
+      Vision Transformers
+    Space Technologies
+      Inertial Attitude Estimation
+      Multi-sensor Fusion
+      In-Space Manufacturing
+    Medical AI
+      Cancer Detection
+      Evidence-based Systems
+      Literature Intelligence
+```
+
+## 💫 Notable Achievements
+
+### 🏆 Recent Recognition
+- Outstanding Reviewer, IEEE Transactions on Instrumentation & Measurement (2023)
+- AWS AI & ML Scholarship Recipient (2023)
+- Ranked 1st in OxML Competition, Oxford ML Summer School (2023)
+- Top 10% in M.Sc. Aerospace Engineering National Entrance Exam
+
+### 🔧 Technical Arsenal
+
+<div align="center">
+
+#### Core Expertise
+[![Python](https://img.shields.io/badge/Python-▮▮▮▮▮-3776AB?style=flat-square&logo=Python&logoColor=white&labelColor=gray)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-▮▮▮▮▮-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white&labelColor=gray)](https://pytorch.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-▮▮▮▮-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white&labelColor=gray)](https://www.tensorflow.org/)
+[![ROS2](https://img.shields.io/badge/ROS2-▮▮▮▮-22314E?style=flat-square&logo=ros&logoColor=white&labelColor=gray)](https://ros.org/)
+
+#### Development Tools
+[![CUDA](https://img.shields.io/badge/CUDA-▮▮▮▮-76B900?style=flat-square&logo=nvidia&logoColor=white&labelColor=gray)](https://developer.nvidia.com/cuda-toolkit)
+[![Docker](https://img.shields.io/badge/Docker-▮▮▮▮-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=gray)](https://www.docker.com/)
+[![Git](https://img.shields.io/badge/Git-▮▮▮▮-F05032?style=flat-square&logo=git&logoColor=white&labelColor=gray)](https://git-scm.com/)
+
+</div>
+
+## 📊 Research Impact Metrics
+
+<div align="center">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArmanAsq&theme=tokyonight&hide_border=true&background=0D1117&fire=6495ED&ring=6495ED&currStreakLabel=6495ED" />
+</div>
+
+<div align="center">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ArmanAsq&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=6495ED&icon_color=6495ED"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArmanAsq&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&bg_color=0D1117&title_color=6495ED"/>
+</div>
+
+## 🌐 Connect & Collaborate
+
+<div align="center">
+    <a href="mailto:A.Asgharpoor@ut.ac.ir"><img src="https://img.shields.io/badge/-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+    <a href="https://ArmanAsq.github.io"><img src="https://img.shields.io/badge/-Portfolio-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+    <a href="https://www.linkedin.com/in/asgharpoor/"><img src="https://img.shields.io/badge/-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+</div>
+
+<div align="center">
+    <a href="https://scholar.google.com/citations?user=YOUR_ID"><img src="https://img.shields.io/badge/-Google_Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white"/></a>
+    <a href="https://twitter.com/Armannearu"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white"/></a>
+    <a href="https://www.instagram.com/arman_asq/"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white"/></a>
+</div>
+
+---
+
+<div align="center">
+    <h3>🌌 Always Exploring New Frontiers in AI & Space Technology</h3>
+    <p><i>From Earth to the stars, making autonomous navigation smarter, one algorithm at a time</i></p>
+</div>
+
