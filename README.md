@@ -1,179 +1,126 @@
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3500&pause=400&color=6495ED&center=true&vCenter=true&width=900&lines=Arman+Asgharpoor+Golroudbari;AI+Research+Engineer;SLAM+%7C+State+Estimation+%7C+Sensor+Fusion;Physics-Informed+Learning+%7C+Transformers+%7C+Robotics" alt="Typing SVG" />
-</div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=ArmanAsq&color=6495ED&style=flat-square" alt="profile views" />
-  <img src="https://img.shields.io/badge/Focus-SLAM%20%7C%20State%20Estimation%20%7C%20Sensor%20Fusion-0D1117?style=flat-square&labelColor=6495ED" alt="focus" />
-  <img src="https://img.shields.io/badge/Stack-PyTorch%20%7C%20ROS2%20%7C%20CUDA%20%7C%20Docker-0D1117?style=flat-square&labelColor=6495ED" alt="stack" />
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="mailto:A.Asgharpoor@ut.ac.ir"><img src="https://img.shields.io/badge/Email-A.Asgharpoor%40ut.ac.ir-0D1117?style=for-the-badge&labelColor=6495ED" /></a>
-  <a href="https://ArmanAsq.github.io"><img src="https://img.shields.io/badge/Portfolio-ArmanAsq.github.io-0D1117?style=for-the-badge&labelColor=6495ED" /></a>
-  <a href="https://www.linkedin.com/in/asgharpoor/"><img src="https://img.shields.io/badge/LinkedIn-asgharpoor-0D1117?style=for-the-badge&labelColor=6495ED" /></a>
-  <a href="https://twitter.com/Armannearu"><img src="https://img.shields.io/badge/X-Armannearu-0D1117?style=for-the-badge&labelColor=6495ED" /></a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=500&color=8EA5E4&center=true&width=900&lines=Arman+Asgharpoor+Golroudbari;AI+Research+Scientist;SLAM+%26+Navigation;Mapping+%26+Learning" alt="Typing SVG" />
 </div>
 
 ---
 
-## Profile
+# Academic & Professional Journey
 
-<table>
-  <tr>
-    <td width="55%" valign="top">
+**Arman Asgharpoor Golroudbari, M.Sc.**
 
-- M.Sc. Space Engineering, University of Tehran  
-- Background: Avionics Engineering  
-- Senior AI Research Associate, Rajaei Cardiovascular Center  
-- AI Research Engineer, MHS Company  
+- Space Engineering graduate, University of Tehran (GPA 4.00/4.00)
+- Avionics Engineering background (GPA 3.80/4.00)
+- Senior AI Research Associate at Rajaei Cardiovascular Center
+- AI Research Engineer at MHS Company
 
-**Core topics**
-- SLAM, reconstruction, dynamic environments
-- Inertial attitude estimation, state estimation, multi-sensor fusion
-- Physics-informed learning, transformer-based modeling
+## Latest Research
 
-    </td>
-    <td width="45%" valign="top">
+- "TE‑PINN: Quaternion‑Based Orientation Estimation using Transformer‑Enhanced Physics‑Informed Neural Networks" (ICRA 2025, under review)
+- "End‑to‑End Deep Learning Framework for Real‑Time Inertial Attitude Estimation using 6DoF IMU" (Measurement 2023)
+- "Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation" (arXiv 2023)
+- "The Future of In‑Space Manufacturing: A Systematic Review" (75th IAC 2024)
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ArmanAsq&theme=darkhub&no-frame=true&row=3&column=3" />
-</div>
-
-    </td>
-  </tr>
-</table>
-
----
-
-## Research
-
-### Publications and preprints
-- TE-PINN: Quaternion-Based Orientation Estimation using Transformer-Enhanced Physics-Informed Neural Networks (ICRA 2025, under review)
-- End-to-End Deep Learning Framework for Real-Time Inertial Attitude Estimation using 6DoF IMU (Measurement, 2023)
-- Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation (arXiv, 2023)
-- The Future of In-Space Manufacturing: A Systematic Review (75th IAC, 2024)
-
-<details>
-  <summary>Research map</summary>
+## Research Areas
 
 ```mermaid
-mindmap
-  root((Research))
-    SLAM
-      Dynamic navigation
-      Reconstruction
-      Mapping
-    Estimation
-      Inertial attitude
-      Sensor fusion
-      Filtering
-    Deep learning
-      PINNs
-      Transformers
-      Self-adaptation
-    Space systems
-      Guidance navigation control
-      In-space manufacturing
-    Medical AI
-      Detection
-      Evidence systems
-      Literature intelligence
+graph LR
+  A[Research Areas] --> B[SLAM & Mapping]
+  A --> C[AI & Deep Learning]
+  A --> D[Space Technologies]
+  A --> E[Medical AI]
+  B --> B1[Environment Navigation]
+  B --> B2[Intergalactic Medium Mapping]
+  B --> B3[Real‑Time State Estimation]
+  C --> C1[Physics‑Informed Neural Networks]
+  C --> C2[Self‑Adaptive Systems]
+  C --> C3[Vision Transformers]
+  D --> D1[Inertial Attitude Estimation]
+  D --> D2[Multi‑Sensor Fusion]
+  D --> D3[In‑Space Manufacturing]
+  E --> E1[Cancer Detection]
+  E --> E2[Evidence‑Based Systems]
+  E --> E3[Literature Intelligence]
 ````
 
-</details>
+## Achievements & Recognition
 
----
+* Reviewer, IEEE Transactions on Instrumentation & Measurement (2023)
+* AWS AI & ML Scholarship recipient (2023)
+* Rank 1, OxML Competition, Oxford ML Summer School (2023)
+* Top 10% in M.Sc. Aerospace Engineering national entrance exam
 
-## Work streams
+## Technical Skills
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,ros2,c,cpp,cuda,docker,git,linux,githubactions" alt="Skills" />
+</p>
 
-### Robotics and autonomy
+## Research Impact Metrics
 
-* Visual-inertial and inertial-only orientation
-* Robustness under nonstationary dynamics
-* Deployment constraints: latency, compute, calibration drift
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ArmanAsq&show_icons=true&count_private=true&hide_border=true&theme=transparent" alt="GitHub stats" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=ArmanAsq&hide_border=true&theme=transparent" alt="GitHub streak" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArmanAsq&layout=donut&hide_border=true&theme=transparent&langs_count=8" alt="Top languages" />
+</div>
 
-    </td>
-    <td width="50%" valign="top">
+## Profile Summary
 
-### Medical AI and evidence systems
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ArmanAsq&theme=github_dark" alt="Profile Details" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ArmanAsq&theme=github_dark&utcOffset=0" alt="Productive Time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ArmanAsq&theme=github_dark" alt="Repos by Language" />
+</div>
 
-* Clinical detection workflows
-* Retrieval and evidence linking
-* Dataset shift monitoring
+## Contributions Snake
 
-    </td>
-  </tr>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArmanAsq/ArmanAsq/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArmanAsq/ArmanAsq/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/ArmanAsq/ArmanAsq/output/github-contribution-grid-snake.svg" />
+  </picture>
+</div>
 
-</table>
+## Latest Blog Posts
 
----
+<!-- BLOG-POST-LIST:START -->
+
+<!-- BLOG-POST-LIST:END -->
 
 ## Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ArmanAsq&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=6495ED&icon_color=6495ED&text_color=C9D1D9" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArmanAsq&hide_border=true&background=0D1117&ring=6495ED&fire=6495ED&currStreakLabel=6495ED&sideLabels=C9D1D9&dates=8B949E&sideNums=C9D1D9&currStreakNum=C9D1D9" height="170" />
+  <img src="https://raw.githubusercontent.com/ArmanAsq/ArmanAsq/main/github-metrics.svg" alt="Metrics" />
+</div>
+
+## Featured Projects & Publications
+
+* **Quaternion‑based orientation estimation with physics‑informed neural networks** — implementation and evaluation of quaternion‑based orientation estimation with physics‑informed neural networks
+* **Real‑time inertial attitude estimation** — deep learning models for 6DoF IMU data
+* **Autonomous navigation survey** — survey of deep learning methods for navigation and mapping
+* **In‑space manufacturing review** — analysis of manufacturing techniques in microgravity
+
+## Connect & Collaborate
+
+<div align="center">
+  <a href="mailto:A.Asgharpoor@ut.ac.ir"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://ArmanAsq.github.io"><img src="https://img.shields.io/badge/Portfolio-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/asgharpoor/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArmanAsq&hide_border=true&layout=compact&bg_color=0D1117&title_color=6495ED&text_color=C9D1D9" height="170" />
+  <a href="https://scholar.google.com/citations?user=YOUR_ID"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white" alt="Google Scholar" /></a>
+  <a href="https://twitter.com/Armannearu"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white" alt="Twitter" /></a>
+  <a href="https://www.instagram.com/arman_asq/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram" /></a>
 </div>
 
 ---
 
-## Selected stack
-
 <div align="center">
-
-<img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/PyTorch-0D1117?style=flat-square&logo=pytorch&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/TensorFlow-0D1117?style=flat-square&logo=tensorflow&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/ROS2-0D1117?style=flat-square&logo=ros&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/CUDA-0D1117?style=flat-square&logo=nvidia&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/Linux-0D1117?style=flat-square&logo=linux&logoColor=C9D1D9&labelColor=6495ED" />
-<img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=C9D1D9&labelColor=6495ED" />
-
+  <h3>Exploring AI and space technologies</h3>
+  <p>From Earth to space, building navigation systems one algorithm at a time</p>
 </div>
-
----
-
-## Visual add-ons
-
-<details>
-  <summary>3D contribution skyline</summary>
-
-* Open: [https://gitskyline.vercel.app/ArmanAsq](https://gitskyline.vercel.app/ArmanAsq)
-* Export and pin a rendered image in this section after export
-
-</details>
-
-<details>
-  <summary>One-image profile metrics dashboard</summary>
-
-```md
-![Metrics](https://metrics.lecoq.io/ArmanAsq)
 ```
 
-</details>
-
----
-
-## Contact
-
-<div align="center">
-  <a href="mailto:A.Asgharpoor@ut.ac.ir"><img src="https://img.shields.io/badge/Email-A.Asgharpoor%40ut.ac.ir-0D1117?style=for-the-badge&labelColor=6495ED" /></a>
-  <a href="https://scholar.google.com/citations?user=YOUR_ID"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-0D1117?style=for-the-badge&labelColor=6495ED" /></a>
-</div>
-
-
-[1]: https://github.com/lowlighter/metrics/blob/master/.github/readme/partials/documentation/setup/shared.md?utm_source=chatgpt.com "metrics/.github/readme/partials/documentation/setup/shared.md at master ..."
-[2]: https://github.com/lowlighter/metrics/blob/master/.github/readme/partials/documentation/setup/action.md?utm_source=chatgpt.com "metrics/.github/readme/partials/documentation/setup/action.md at master ..."
