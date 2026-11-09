@@ -365,6 +365,69 @@ def radar_svg(snapshot):
     )
 
 
+def constellation_svg(snapshot):
+    items = snapshot.get("featured", [])[:8]
+    if not items:
+        return panel(
+            "PUBLIC RESEARCH CONSTELLATION",
+            "No featured public repositories were returned by the GitHub API.",
+            [("Verified research systems", "Not available")],
+            "Nodes will be populated from source-backed GitHub metadata.",
+        )
+    coords = [(27, 91), (27, 208), (27, 325), (27, 442),
+              (747, 91), (747, 208), (747, 325), (747, 442)]
+    colors = (MINT, GOLD, "#83b7e8", "#c3a6e5")
+    content = [
+        label(28, 39, "RESEARCH CONSTELLATION", 24, FG, 700),
+        label(28, 64, "Verified public projects / editorial research domains / equal-sized nodes", 14, MUTED),
+    ]
+    for index, item in enumerate(items):
+        x, y = coords[index]
+        right_side = index >= 4
+        entry = (x if right_side else x + 326)
+        anchor = "M " + str(entry) + " " + str(y + 47)
+        ctrl1 = 580 if right_side else 520
+        content.append(
+            f'<path d="{anchor} C {ctrl1} {y + 47} {ctrl1} 322 550 322" '
+            f'fill="none" stroke="{LINE}" stroke-width="1.5"/>'
+        )
+    content += [
+        '<circle cx="550" cy="322" r="91" fill="#142a34" stroke="' + MINT + '" stroke-width="2"/>',
+        '<circle cx="550" cy="322" r="70" fill="none" stroke="' + GOLD + '" stroke-width="1" stroke-dasharray="4 8"/>',
+        label(550, 304, "RESEARCH", 22, FG, 700, "middle"),
+        label(550, 332, "SYSTEMS", 22, FG, 700, "middle"),
+        label(550, 356, "EVIDENCE / STATE / MODEL", 12, MUTED, 400, "middle"),
+    ]
+    for index, item in enumerate(items):
+        x, y = coords[index]
+        color = colors[index % len(colors)]
+        short = compact(item.get("name", "Unknown repository"), 34)
+        stars = item.get("stars")
+        star_label = str(stars) + " stars" if isinstance(stars, int) else "Stars unknown"
+        pushed = day(item.get("pushed_at"))
+        content.append(
+            f'<rect x="{x}" y="{y}" width="326" height="94" rx="9" '
+            f'fill="{PANEL}" stroke="{LINE}"/>'
+        )
+        content.append(
+            f'<rect x="{x}" y="{y + 17}" width="4" height="58" rx="2" fill="{color}"/>'
+        )
+        content.append(label(x + 15, y + 23, compact(item.get("area", "Research"), 40), 12, color, 700))
+        content.append(label(x + 15, y + 51, short, 14, FG, 600))
+        content.append(label(x + 15, y + 77, star_label + "  /  push " + pushed, 12, MUTED))
+    content.append(label(
+        28, 580,
+        "Relationships are editorial research categories, not inferred co-authorship or measured project similarity.",
+        12, MUTED,
+    ))
+    return svg_frame(
+        "Source-grounded research constellation",
+        "Featured public repositories connected to the author's research programme. "
+        "Star counts and push dates are verified public metadata. Node size carries no numeric meaning.",
+        600, "".join(content),
+    )
+
+
 def readiness_svg(snapshot):
     columns = [
         ("README", "readme", 582),
@@ -498,6 +561,7 @@ def write_profile(snapshot, output_dir, snapshot_path):
         "overview.svg": overview_svg(snapshot),
         "activity.svg": activity_svg(snapshot),
         "research-radar.svg": radar_svg(snapshot),
+        "constellation.svg": constellation_svg(snapshot),
         "readiness.svg": readiness_svg(snapshot),
         "lineage.svg": lineage_svg(snapshot, digest),
     }

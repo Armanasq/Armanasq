@@ -23,6 +23,7 @@ The public GitHub profile README is the product. It is rendered by GitHub, not b
 ## Novel verification surfaces
 
 - The **research repository radar** joins curated project identities with live GitHub push timestamps and stars.
+- The **research constellation** maps curated public repositories to their editorial research domains, with equal-sized nodes, source-backed GitHub stars and push dates, and an explicit disclaimer that the links do not represent measured similarity.
 - The **research evidence footprint** checks the default-branch trees of public projects for six file-presence markers (README, tests, workflows, license, citation, setup). A marker is not a quality rating and does not assert that any code or experiment passed.
 - The **provenance panel** records exact source endpoints, refresh time and a snapshot digest.
 - Public-source fallback metrics prevent a broken external renderer from leaving empty, misleading panels.

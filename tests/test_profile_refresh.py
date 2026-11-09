@@ -71,7 +71,7 @@ class ProfileRefreshTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             folder = Path(temp)
             p.write_profile(snap, folder / 'assets', folder / 'data' / 'snapshot.json')
-            for name in ['overview', 'activity', 'research-radar', 'lineage', 'readiness']:
+            for name in ['overview', 'activity', 'research-radar', 'lineage', 'readiness', 'constellation']:
                 output = (folder / 'assets' / (name + '.svg')).read_text()
                 self.assertTrue(output.startswith('<svg'))
                 self.assertIn('</svg>', output)

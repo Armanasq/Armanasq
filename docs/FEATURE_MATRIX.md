@@ -9,6 +9,7 @@
 | Research radar | Original | Curated projects joined to verified repository metadata |
 | Data lineage | Original | Timestamp, GitHub data source, snapshot checksum |
 | Research evidence footprint | Original | Default-branch file markers; explicit missing and unknown states |
+| Research constellation | Original | Public, editorial project graph with actual Github stars and push dates; no artificial relationship scores |
 | Fallback analytics | Original | Verified public GitHub data when Lowlighter fails or is restricted |
 | Research method graph | Original | Static transparent methodology visual |
 | Languages (most/recent) | Lowlighter Metrics | GitHub Action panel |

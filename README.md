@@ -59,6 +59,13 @@ GitHub data is refreshed by an automated workflow. Charts show **public informat
 <p align="center"><img src="./assets/live/activity.svg" width="100%" alt="Recent verified public repository activity"></p>
 <p align="center"><img src="./assets/live/research-radar.svg" width="100%" alt="Public research repository radar with latest push timestamps and repository stars"></p>
 
+<details>
+<summary><b>Open the research constellation</b> · a source-backed map of selected public projects</summary>
+<br>
+<p align="center"><img src="./assets/live/constellation.svg" width="100%" alt="Source-grounded project constellation, with actual star counts, GitHub push dates, and editorial research categories"></p>
+<sub>Links represent an editorial research taxonomy, not measured co-authorship or project similarity. Node sizes are equal and do not encode scores.</sub>
+</details>
+
 ### Evidence footprint
 
 This original, self-updating matrix inspects each featured public repository's default-branch file tree for README, tests, workflow, license, citation, and setup-file markers. **File presence does not prove a test passes, research replicates, or software is production-ready.** Missing and unavailable evidence are distinguished.
