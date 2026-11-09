@@ -1,18 +1,6 @@
 {
   "events": [
     {
-      "action": "Pushed code",
-      "date": "2026-11-09T14:08:32Z",
-      "repository": "Armanasq/phd_tracker",
-      "url": "https://github.com/Armanasq/phd_tracker"
-    },
-    {
-      "action": "Pushed code",
-      "date": "2026-11-09T13:14:07Z",
-      "repository": "Armanasq/Armanasq.github.io",
-      "url": "https://github.com/Armanasq/Armanasq.github.io"
-    },
-    {
       "action": "Issue: assigned",
       "date": "2026-11-09T18:41:43Z",
       "repository": "Armanasq/phd_tracker",
@@ -25,14 +13,14 @@
       "url": "https://github.com/Armanasq/phd_tracker"
     },
     {
-      "action": "Pushed code",
-      "date": "2026-11-09T12:43:58Z",
-      "repository": "Armanasq/Armanasq.github.io",
-      "url": "https://github.com/Armanasq/Armanasq.github.io"
+      "action": "Pull request: merged",
+      "date": "2026-11-09T17:57:09Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
     },
     {
-      "action": "Pushed code",
-      "date": "2026-11-09T13:36:04Z",
+      "action": "Pull request: opened",
+      "date": "2026-11-09T17:48:17Z",
       "repository": "Armanasq/phd_tracker",
       "url": "https://github.com/Armanasq/phd_tracker"
     },
@@ -43,8 +31,20 @@
       "url": "https://github.com/Armanasq/phd_tracker"
     },
     {
-      "action": "Pull request: merged",
-      "date": "2026-11-09T17:57:09Z",
+      "action": "Pull request: opened",
+      "date": "2026-11-09T17:16:58Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Pushed code",
+      "date": "2026-11-09T14:08:32Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Pushed code",
+      "date": "2026-11-09T13:36:04Z",
       "repository": "Armanasq/phd_tracker",
       "url": "https://github.com/Armanasq/phd_tracker"
     }
@@ -54,6 +54,18 @@
     {
       "area": "Physics-informed learning",
       "description": "Quaternion orientation estimation with IMU data",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": false,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": null,
       "name": "TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation",
       "pushed_at": "2024-11-13T06:38:38Z",
@@ -63,6 +75,18 @@
     {
       "area": "Inertial state estimation",
       "description": "Deep-learning approach to 6DoF attitude estimation",
+      "file_signals": {
+        "checks": {
+          "citation": true,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": false,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": "Python",
       "name": "End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU",
       "pushed_at": "2024-05-12T14:35:58Z",
@@ -72,6 +96,18 @@
     {
       "area": "Robotics and mapping",
       "description": "Localization and mapping systems",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": true,
+          "readme": true,
+          "setup": true,
+          "tests": true,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/OpenSLAM/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": "Python",
       "name": "OpenSLAM",
       "pushed_at": "2025-11-15T08:31:23Z",
@@ -81,15 +117,39 @@
     {
       "area": "Research operations",
       "description": "AI-assisted academic application and research workflows",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": true,
+          "workflows": true
+        },
+        "source": "https://api.github.com/repos/Armanasq/phd_tracker/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": "Python",
       "name": "phd_tracker",
-      "pushed_at": "2026-11-09T19:05:03Z",
+      "pushed_at": "2026-11-09T19:09:53Z",
       "stars": 0,
       "url": "https://github.com/Armanasq/phd_tracker"
     },
     {
       "area": "Visual odometry",
       "description": "Neural visual odometry",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": false,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/Deep-VO/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": "Python",
       "name": "Deep-VO",
       "pushed_at": "2023-05-27T10:14:49Z",
@@ -99,6 +159,18 @@
     {
       "area": "Medical imaging",
       "description": "Volumetric lesion segmentation",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": false,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": null,
       "name": "3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation",
       "pushed_at": "2025-11-05T14:56:24Z",
@@ -108,6 +180,18 @@
     {
       "area": "Navigation research",
       "description": "Autonomous-navigation literature and methods",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": false,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation/git/trees/master?recursive=1",
+        "status": "complete"
+      },
       "language": "HTML",
       "name": "Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation",
       "pushed_at": "2024-02-08T12:01:43Z",
@@ -117,6 +201,18 @@
     {
       "area": "Medical AI",
       "description": "Public competition research material",
+      "file_signals": {
+        "checks": {
+          "citation": false,
+          "license": false,
+          "readme": true,
+          "setup": false,
+          "tests": false,
+          "workflows": false
+        },
+        "source": "https://api.github.com/repos/Armanasq/The-Health-and-Medicine-OxML-competition-track/git/trees/main?recursive=1",
+        "status": "complete"
+      },
       "language": "Jupyter Notebook",
       "name": "The-Health-and-Medicine-OxML-competition-track",
       "pushed_at": "2024-05-12T14:36:35Z",
@@ -124,7 +220,7 @@
       "url": "https://github.com/Armanasq/The-Health-and-Medicine-OxML-competition-track"
     }
   ],
-  "generated_at_utc": "2026-11-09T19:05:14+00:00",
+  "generated_at_utc": "2026-11-09T19:11:13+00:00",
   "language_repository_counts": {
     "C++": 1,
     "HTML": 2,
@@ -143,14 +239,14 @@
   "login": "Armanasq",
   "recent_public_repository_pushes": [
     {
-      "date": "2026-11-09T19:05:03Z",
-      "name": "phd_tracker",
-      "url": "https://github.com/Armanasq/phd_tracker"
-    },
-    {
-      "date": "2026-11-09T19:05:00Z",
+      "date": "2026-11-09T19:11:01Z",
       "name": "Armanasq",
       "url": "https://github.com/Armanasq/Armanasq"
+    },
+    {
+      "date": "2026-11-09T19:09:53Z",
+      "name": "phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
     },
     {
       "date": "2026-11-09T18:09:29Z",
@@ -183,7 +279,15 @@
   "sources": [
     "https://api.github.com/users/Armanasq",
     "https://api.github.com/users/Armanasq/repos",
-    "https://api.github.com/users/Armanasq/events/public"
+    "https://api.github.com/users/Armanasq/events/public",
+    "https://api.github.com/repos/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation/git/trees/main?recursive=1",
+    "https://api.github.com/repos/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU/git/trees/main?recursive=1",
+    "https://api.github.com/repos/Armanasq/OpenSLAM/git/trees/main?recursive=1",
+    "https://api.github.com/repos/Armanasq/phd_tracker/git/trees/main?recursive=1",
+    "https://api.github.com/repos/Armanasq/Deep-VO/git/trees/main?recursive=1",
+    "https://api.github.com/repos/Armanasq/3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation/git/trees/main?recursive=1",
+    "https://api.github.com/repos/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation/git/trees/master?recursive=1",
+    "https://api.github.com/repos/Armanasq/The-Health-and-Medicine-OxML-competition-track/git/trees/main?recursive=1"
   ],
   "statistics": {
     "forks": 12,
