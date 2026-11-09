@@ -7,7 +7,7 @@ class ProfileIntegrationTests(unittest.TestCase):
         text = "x\n<!-- featured:start -->\nold\n<!-- featured:end -->\n<!-- activity:start -->\nold\n<!-- activity:end -->"
         snapshot = {"featured":[{"name":"Demo","url":"https://github.com/Armanasq/Demo","stars":4,"area":"Research"}],"events":[]}
         result = render(text, snapshot)
-        self.assertIn("| [Demo](https://github.com/Armanasq/Demo) | Research | 4 |", result)
+        self.assertIn('<a href="https://github.com/Armanasq/Demo">Demo</a>', result)
         self.assertEqual(render(result,snapshot),result)
 
     def test_challenge_deduplicates_voters(self):
