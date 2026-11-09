@@ -55,3 +55,9 @@ GH_TOKEN= python scripts/profile_refresh.py --user Armanasq
 ```
 
 The second command requires access to GitHub's public API. To verify a change without network access, run the unit tests using mocked API responses.
+
+## Upstream metrics versioning and fallback
+
+The Lowlighter action uses the public **v3.34** release tag rather than a raw commit SHA. Its Docker launcher treats SHA references as fork builds and attempts to construct a historical image with an obsolete Ruby dependency chain; that build fails with a missing `xzcat` executable. The published release tag selects the upstream prebuilt image where available. The basic public GitHub snapshot and local source-backed metric fallbacks remain independent of Lowlighter.
+
+Both `assets/live/` and `assets/metrics/` are staged before rebasing and pushing the daily refresh. The generated fallback assets must be committed together with the JSON snapshot, otherwise a dirty worktree prevents `git pull --rebase`.

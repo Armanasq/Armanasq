@@ -70,7 +70,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/live/ data/public-snapshot.json
+          git add assets/live/ assets/metrics/ data/public-snapshot.json
           git diff --cached --check
           if ! git diff --cached --quiet; then
             git commit -m "chore(profile): refresh verified public telemetry [skip ci]"
@@ -81,8 +81,9 @@ jobs:
       - name: Lowlighter - engineering signals
         id: engineering
         continue-on-error: true
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        uses: lowlighter/metrics@v3.34
         with:
+          use_prebuilt_image: yes
           token: ${{ github.token }}
           user: Armanasq
           repo: Armanasq
@@ -103,8 +104,9 @@ jobs:
       - name: Lowlighter - timeline and isometric calendar
         id: chronicle
         continue-on-error: true
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        uses: lowlighter/metrics@v3.34
         with:
+          use_prebuilt_image: yes
           token: ${{ github.token }}
           user: Armanasq
           repo: Armanasq
@@ -123,8 +125,9 @@ jobs:
       - name: Lowlighter - recognitions and contributions
         id: recognition
         continue-on-error: true
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        uses: lowlighter/metrics@v3.34
         with:
+          use_prebuilt_image: yes
           token: ${{ github.token }}
           user: Armanasq
           repo: Armanasq
@@ -143,8 +146,9 @@ jobs:
       - name: Lowlighter - open-source ecosystem
         id: ecosystem
         continue-on-error: true
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        uses: lowlighter/metrics@v3.34
         with:
+          use_prebuilt_image: yes
           token: ${{ github.token }}
           user: Armanasq
           repo: Armanasq
