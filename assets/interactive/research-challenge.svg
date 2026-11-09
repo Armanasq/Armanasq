@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 225" role="img" aria-label="Research challenge tally"><rect width="900" height="225" rx="12" fill="#0d1320"/><text x="25" y="35" fill="#dce6f6" font-family="Arial" font-size="18" font-weight="bold">Research challenge / public responses</text><text x="25" y="73" fill="#dce6f6" font-family="Arial" font-size="14">A / Data leakage / split</text><rect x="250" y="59" width="590" height="18" rx="5" fill="#263249"/><text x="858" y="73" fill="#dce6f6" font-family="Arial" font-size="14">0</text><text x="25" y="122" fill="#dce6f6" font-family="Arial" font-size="14">B / Distribution shift</text><rect x="250" y="108" width="590" height="18" rx="5" fill="#263249"/><text x="858" y="122" fill="#dce6f6" font-family="Arial" font-size="14">0</text><text x="25" y="171" fill="#dce6f6" font-family="Arial" font-size="14">C / Baseline mismatch</text><rect x="250" y="157" width="590" height="18" rx="5" fill="#263249"/><text x="858" y="171" fill="#dce6f6" font-family="Arial" font-size="14">0</text><text x="25" y="212" fill="#9aa8bf" font-family="Arial" font-size="12">0 unique public participants · first valid issue per account</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 225" role="img" aria-label="Research challenge vote tally">
+<rect width="900" height="225" rx="12" fill="#0d1320"/>
+<text x="25" y="35" fill="#dce6f6" font-family="Arial" font-size="18" font-weight="bold">Research challenge / public responses</text>
+<text x="25" y="73" fill="#dce6f6" font-family="Arial" font-size="14">A  Data leakage / split</text>
+<rect x="250" y="59" width="590" height="18" rx="5" fill="#263249"/>
+<rect x="250" y="59" width="0.0" height="18" rx="5" fill="#9e8df5"/>
+<text x="858" y="73" fill="#dce6f6" font-family="Arial" font-size="14">0</text>
+<text x="25" y="122" fill="#dce6f6" font-family="Arial" font-size="14">B  Distribution shift</text>
+<rect x="250" y="108" width="590" height="18" rx="5" fill="#263249"/>
+<rect x="250" y="108" width="0.0" height="18" rx="5" fill="#64c5d3"/>
+<text x="858" y="122" fill="#dce6f6" font-family="Arial" font-size="14">0</text>
+<text x="25" y="171" fill="#dce6f6" font-family="Arial" font-size="14">C  Baseline mismatch</text>
+<rect x="250" y="157" width="590" height="18" rx="5" fill="#263249"/>
+<rect x="250" y="157" width="0.0" height="18" rx="5" fill="#d5b17b"/>
+<text x="858" y="171" fill="#dce6f6" font-family="Arial" font-size="14">0</text>
+<text x="25" y="212" fill="#9aa8bf" font-family="Arial" font-size="12">0 unique public participants · first valid issue per account</text>
+</svg>

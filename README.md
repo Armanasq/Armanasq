@@ -72,8 +72,8 @@ I design and evaluate agentic AI, SLAM and navigation, physics-informed estimati
 <table><tr><th>Date</th><th>Activity</th><th>Repository</th></tr>
 <tr><td>2026-11-09</td><td>Issue: assigned</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
 <tr><td>2026-11-09</td><td>Issue: opened</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
-<tr><td>2026-11-09</td><td>Pull request: merged</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
-<tr><td>2026-11-09</td><td>Pull request: opened</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
+<tr><td>2026-11-09</td><td>Issue: assigned</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
+<tr><td>2026-11-09</td><td>Issue: opened</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
 <tr><td>2026-11-09</td><td>Pull request: merged</td><td><a href="https://github.com/Armanasq/phd_tracker">Armanasq/phd_tracker</a></td></tr>
 </table>
 <!-- activity:end -->

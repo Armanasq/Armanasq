@@ -2,6 +2,18 @@
   "events": [
     {
       "action": "Issue: assigned",
+      "date": "2026-11-09T19:35:56Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Issue: opened",
+      "date": "2026-11-09T19:35:45Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Issue: assigned",
       "date": "2026-11-09T18:41:43Z",
       "repository": "Armanasq/phd_tracker",
       "url": "https://github.com/Armanasq/phd_tracker"
@@ -33,18 +45,6 @@
     {
       "action": "Pull request: opened",
       "date": "2026-11-09T17:16:58Z",
-      "repository": "Armanasq/phd_tracker",
-      "url": "https://github.com/Armanasq/phd_tracker"
-    },
-    {
-      "action": "Pushed code",
-      "date": "2026-11-09T14:08:32Z",
-      "repository": "Armanasq/phd_tracker",
-      "url": "https://github.com/Armanasq/phd_tracker"
-    },
-    {
-      "action": "Pushed code",
-      "date": "2026-11-09T13:36:04Z",
       "repository": "Armanasq/phd_tracker",
       "url": "https://github.com/Armanasq/phd_tracker"
     }
@@ -131,7 +131,7 @@
       },
       "language": "Python",
       "name": "phd_tracker",
-      "pushed_at": "2026-11-09T19:27:59Z",
+      "pushed_at": "2026-11-09T20:52:56Z",
       "stars": 0,
       "url": "https://github.com/Armanasq/phd_tracker"
     },
@@ -220,7 +220,7 @@
       "url": "https://github.com/Armanasq/The-Health-and-Medicine-OxML-competition-track"
     }
   ],
-  "generated_at_utc": "2026-11-09T19:28:37+00:00",
+  "generated_at_utc": "2026-11-09T20:56:03+00:00",
   "language_repository_counts": {
     "C++": 1,
     "HTML": 2,
@@ -239,12 +239,12 @@
   "login": "Armanasq",
   "recent_public_repository_pushes": [
     {
-      "date": "2026-11-09T19:28:24Z",
+      "date": "2026-11-09T20:55:57Z",
       "name": "Armanasq",
       "url": "https://github.com/Armanasq/Armanasq"
     },
     {
-      "date": "2026-11-09T19:27:59Z",
+      "date": "2026-11-09T20:52:56Z",
       "name": "phd_tracker",
       "url": "https://github.com/Armanasq/phd_tracker"
     },
@@ -294,7 +294,7 @@
     "original_public_repositories": 48,
     "public_followers": 42,
     "public_repositories": 60,
-    "sampled_public_events": 23,
+    "sampled_public_events": 34,
     "stars_on_original_public_repositories": 155
   }
 }
