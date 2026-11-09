@@ -1,8 +1,14 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/visuals/research-hero.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/visuals/research-hero.svg"><img alt="Arman Asgharpoor Golroudbari · evidence-grounded AI engineering and research systems" src="./assets/visuals/research-hero.svg" width="100%"></picture>
 
-<p align="center"><a href="#contributions-in-perspective">3D contributions</a> &nbsp; · &nbsp; <a href="#the-project-skyline">Project skyline</a> &nbsp; · &nbsp; <a href="#research-universe">Research universe</a> &nbsp; · &nbsp; <a href="#research-evidence">Evidence</a> &nbsp; · &nbsp; <a href="#lowlighter-metrics">Metrics</a></p>
+<p align="center"><a href="#technology-stack">Stack</a> &nbsp; · &nbsp; <a href="#contributions-in-perspective">3D contributions</a> &nbsp; · &nbsp; <a href="#the-project-skyline">Project skyline</a> &nbsp; · &nbsp; <a href="#research-universe">Research universe</a> &nbsp; · &nbsp; <a href="#research-evidence">Evidence</a> &nbsp; · &nbsp; <a href="#lowlighter-metrics">Metrics</a></p>
 
 **Agentic AI engineer · Applied machine learning researcher · Robotics and navigation · Clinical AI.** I build source-grounded systems that preserve state, expose uncertainty, and survive evaluation beyond polished demonstrations.
+
+## Technology stack
+
+<img src="./assets/visuals/engineering-stack.svg" width="100%" alt="Four raised isometric technology panels: AI reasoning, retrieval and data, robotics, infrastructure">
+
+<sub>Technical focus areas, not proficiency scores or fabricated activity statistics.</sub>
 
 ## Contributions in perspective
 
@@ -45,7 +51,7 @@ File markers indicate only whether documentation, tests, workflows, licence, cit
 
 The following panels are generated with [Lowlighter Metrics](https://github.com/lowlighter/metrics) when upstream rendering succeeds. Source-backed public data is displayed as a fallback if it does not.
 
-<table><tr><td width="50%"><img src="./assets/metrics/engineering.svg" alt="Repository language and engineering metrics" width="100%"/></td><td width="50%"><img src="./assets/metrics/recognition.svg" alt="GitHub recognition and community metrics" width="100%"/></td></tr><tr><td><img src="./assets/metrics/chronicle.svg" alt="Isometric activity calendar and public events" width="100%"/></td><td><img src="./assets/metrics/ecosystem.svg" alt="Open-source ecosystem and topic metrics" width="100%"/></td></tr></table>
+<table><tr><td width="52%" valign="top"><img src="./assets/metrics/engineering.svg" width="100%" alt="Lowlighter engineering metrics"><img src="./assets/metrics/chronicle.svg" width="100%" alt="Lowlighter public activity and isometric calendar"></td><td width="48%" valign="top"><img src="./assets/metrics/recognition.svg" width="100%" alt="Lowlighter community recognition and achievements"><img src="./assets/metrics/ecosystem.svg" width="100%" alt="Lowlighter open-source ecosystem"></td></tr></table>
 
 <details><summary><b>Provenance, verified activity and full repository radar</b></summary>
 <img src="./assets/live/overview.svg" width="100%" alt="Public GitHub repository statistics">
@@ -53,6 +59,12 @@ The following panels are generated with [Lowlighter Metrics](https://github.com/
 <img src="./assets/live/research-radar.svg" width="100%" alt="Source backed research repository radar">
 <img src="./assets/live/lineage.svg" width="100%" alt="Snapshot freshness and source lineage">
 </details>
+
+## Current research and system development
+
+<table><tr><td width="55%" valign="top"><img src="./assets/visuals/research-orbit.svg" width="100%" alt="Research domains in an orbital system"></td><td width="45%" valign="top"><b>Research programmes</b><p><b>APEX-G</b><br>Generalization, persistent learning, and adaptive problem-solving.</p><p><b>Evidence-grounded agents</b><br>Multi-turn reasoning, source provenance, and evaluation.</p><p><b>Robotic intelligence</b><br>SLAM, inertial estimation, and physics-informed learning.</p><p><b>Research operations</b><br>Traceable workflows and reproducible systems.</p></td></tr></table>
+
+<details><summary><b>Project activity and verification</b></summary><img src="./assets/live/activity.svg" width="100%" alt="Verified recent GitHub public activity"><img src="./assets/live/lineage.svg" width="100%" alt="Source freshness and provenance"></details>
 
 ## Publications and technical writing
 
