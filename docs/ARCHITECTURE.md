@@ -62,3 +62,11 @@ The second command requires access to GitHub's public API. To verify a change wi
 The Lowlighter action uses the public **v3.34** release tag. Its historical Docker bootstrap identifies the upstream publisher by extracting the prefix before `metrics` from `GITHUB_ACTION`. Custom step IDs like `engineering` cause it to misclassify the invocation as a fork and rebuild the image, which fails when the historical container lacks `xzcat`. Every action step therefore uses an explicit `lowlighter_metrics_*` ID so the upstream Docker image is selected; this is verified against `source/app/action/run.sh` in the upstream repository. The basic public GitHub snapshot and local source-backed metric fallbacks remain independent of Lowlighter.
 
 Both `assets/live/` and `assets/metrics/` are staged before rebasing and pushing the daily refresh. The generated fallback assets must be committed together with the JSON snapshot, otherwise a dirty worktree prevents `git pull --rebase`.
+
+## Isometric graphics and contribution provenance
+
+The README prioritizes original, repo-hosted SVG visuals rather than generic external badge services. The generated project skyline encodes verified public repository stars as isometric extrusion height; zero-star repositories remain present with baseline pedestals. The research-orbit is an editorial diagram and never implies quantified scientific similarity.
+
+`python scripts/render_profile_art.py` first attempts GitHub GraphQL daily contributions with the short-lived workflow token, then a publicly visible HTML calendar with ordinal activity levels as a fallback. Only calendars with at least 300 dated observations are rendered as 3D daily blocks. The source, granularity and dates are retained in `data/contributions.json`. If neither source is available, the output explicitly says so. Test fixtures use synthetic counts only for local QA and are never published as real activity.
+
+All SVGs use native geometry, no external fonts/scripts and explicit alt text. The generator uses Python's standard library. The daily workflow validates XML for these visuals and stages them with the GitHub API snapshot in a single commit.

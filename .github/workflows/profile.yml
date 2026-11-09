@@ -10,6 +10,8 @@ on:
     paths:
       - ".github/workflows/profile.yml"
       - "scripts/profile_refresh.py"
+      - "scripts/render_profile_art.py"
+      - "tests/test_render_profile_art.py"
       - "tests/test_profile_refresh.py"
       - "config/featured.json"
 
@@ -46,6 +48,12 @@ jobs:
         run: |
           python scripts/profile_refresh.py --user Armanasq --config config/featured.json --out assets/live --snapshot data/public-snapshot.json
 
+      - name: Generate isometric visual assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/render_profile_art.py --snapshot data/public-snapshot.json --contributions data/contributions.json --output assets/visuals
+
       - name: Validate generated SVG and JSON
         run: |
           python - <<'PY'
@@ -59,6 +67,11 @@ jobs:
               assert root.tag == "{http://www.w3.org/2000/svg}svg"
           for file in sorted(Path("assets/metrics").glob("*.svg")):
               ET.parse(file)
+          for file in sorted(Path("assets/visuals").glob("*.svg")):
+              ET.parse(file)
+          contributions = json.loads(Path("data/contributions.json").read_text())
+          if contributions.get("status") == "verified":
+              assert len(contributions.get("days", [])) >= 300
           data = json.loads(Path("data/public-snapshot.json").read_text())
           assert data["schema_version"] == 1
           assert data["login"] == "Armanasq"
@@ -70,7 +83,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/live/ assets/metrics/ data/public-snapshot.json
+          git add assets/live/ assets/metrics/ assets/visuals/ data/public-snapshot.json data/contributions.json
           git diff --cached --check
           if ! git diff --cached --quiet; then
             git commit -m "chore(profile): refresh verified public telemetry [skip ci]"
