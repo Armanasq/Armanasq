@@ -59,6 +59,6 @@ The second command requires access to GitHub's public API. To verify a change wi
 
 ## Upstream metrics versioning and fallback
 
-The Lowlighter action uses the public **v3.34** release tag rather than a raw commit SHA. Its Docker launcher treats SHA references as fork builds and attempts to construct a historical image with an obsolete Ruby dependency chain; that build fails with a missing `xzcat` executable. The published release tag selects the upstream prebuilt image where available. The basic public GitHub snapshot and local source-backed metric fallbacks remain independent of Lowlighter.
+The Lowlighter action uses the public **v3.34** release tag. Its historical Docker bootstrap identifies the upstream publisher by extracting the prefix before `metrics` from `GITHUB_ACTION`. Custom step IDs like `engineering` cause it to misclassify the invocation as a fork and rebuild the image, which fails when the historical container lacks `xzcat`. Every action step therefore uses an explicit `lowlighter_metrics_*` ID so the upstream Docker image is selected; this is verified against `source/app/action/run.sh` in the upstream repository. The basic public GitHub snapshot and local source-backed metric fallbacks remain independent of Lowlighter.
 
 Both `assets/live/` and `assets/metrics/` are staged before rebasing and pushing the daily refresh. The generated fallback assets must be committed together with the JSON snapshot, otherwise a dirty worktree prevents `git pull --rebase`.

@@ -79,7 +79,7 @@ jobs:
           fi
 
       - name: Lowlighter - engineering signals
-        id: engineering
+        id: lowlighter_metrics_engineering
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
         with:
@@ -102,7 +102,7 @@ jobs:
           plugin_followup: yes
 
       - name: Lowlighter - timeline and isometric calendar
-        id: chronicle
+        id: lowlighter_metrics_chronicle
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
         with:
@@ -123,7 +123,7 @@ jobs:
           plugin_activity_days: 30
 
       - name: Lowlighter - recognitions and contributions
-        id: recognition
+        id: lowlighter_metrics_recognition
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
         with:
@@ -144,7 +144,7 @@ jobs:
           plugin_people_limit: 12
 
       - name: Lowlighter - open-source ecosystem
-        id: ecosystem
+        id: lowlighter_metrics_ecosystem
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
         with:
@@ -170,10 +170,10 @@ jobs:
       - name: Report optional plugin failures
         if: always()
         env:
-          ENGINEERING: ${{ steps.engineering.outcome }}
-          CHRONICLE: ${{ steps.chronicle.outcome }}
-          RECOGNITION: ${{ steps.recognition.outcome }}
-          ECOSYSTEM: ${{ steps.ecosystem.outcome }}
+          ENGINEERING: ${{ steps.lowlighter_metrics_engineering.outcome }}
+          CHRONICLE: ${{ steps.lowlighter_metrics_chronicle.outcome }}
+          RECOGNITION: ${{ steps.lowlighter_metrics_recognition.outcome }}
+          ECOSYSTEM: ${{ steps.lowlighter_metrics_ecosystem.outcome }}
         run: |
           for result in "$ENGINEERING" "$CHRONICLE" "$RECOGNITION" "$ECOSYSTEM"; do
             if [ "$result" = "failure" ]; then
