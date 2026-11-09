@@ -10,8 +10,6 @@ on:
     paths:
       - ".github/workflows/profile.yml"
       - "scripts/profile_refresh.py"
-      - "scripts/render_profile_art.py"
-      - "tests/test_render_profile_art.py"
       - "tests/test_profile_refresh.py"
       - "config/featured.json"
 
@@ -92,6 +90,7 @@ jobs:
           fi
 
       - name: Lowlighter - engineering signals
+        if: github.event_name != 'push'
         id: lowlighter_metrics_engineering
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
@@ -115,6 +114,7 @@ jobs:
           plugin_followup: yes
 
       - name: Lowlighter - timeline and isometric calendar
+        if: github.event_name != 'push'
         id: lowlighter_metrics_chronicle
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
@@ -136,6 +136,7 @@ jobs:
           plugin_activity_days: 30
 
       - name: Lowlighter - recognitions and contributions
+        if: github.event_name != 'push'
         id: lowlighter_metrics_recognition
         continue-on-error: true
         uses: lowlighter/metrics@v3.34
@@ -157,6 +158,7 @@ jobs:
           plugin_people_limit: 12
 
       - name: Lowlighter - open-source ecosystem
+        if: github.event_name != 'push'
         id: lowlighter_metrics_ecosystem
         continue-on-error: true
         uses: lowlighter/metrics@v3.34

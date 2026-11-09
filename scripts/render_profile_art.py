@@ -171,11 +171,18 @@ def calendar_svg(data):
     meta=data.get('total_reported')
     title=(f'{meta:,} contributions' if iscount and isinstance(meta,int) else 'Public activity levels')
     content=(text(38,48,'CONTRIBUTIONS / ISOMETRIC CALENDAR',14,VIOLET,True)
-             +text(38,96,'365 days in perspective',42,WHITE,True)
+             +text(38,96,f'{len(dated)} days in perspective',42,WHITE,True)
              +text(38,127,'Observed GitHub activity; each block represents one day.',17,MUTED)
              +text(1157,91,title,21,GREEN[2],True,'end'))
     content+=f'<path d="M39 149H1161" stroke="{EDGE}"/>'
     content+=''.join(c[2] for c in sorted(cells,key=lambda c:(c[0],c[1])))
+    labels = []
+    for day, record in dated:
+        if day.day == 1 or day == dated[0][0]:
+            week=(day-first).days//7
+            if 0<=week<55:
+                labels.append(text(125+week*17.3,490,day.strftime('%b'),12,MUTED))
+    content+=''.join(labels)
     content+=text(41,526,'LOW ACTIVITY',13,MUTED)
     content+=''.join(cube(163+i*38,518,8+i*4,.85,i) for i in range(5))
     content+=text(391,526,'HIGH ACTIVITY',13,MUTED)

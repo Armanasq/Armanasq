@@ -38,6 +38,7 @@ class ProfileArtTests(unittest.TestCase):
         })
         ET.fromstring(svg)
         self.assertIn("365 days in perspective", svg)
+        self.assertIn("Dec", svg)
         self.assertGreater(svg.count("<polygon"), 800)
 
     def test_untrusted_text_is_escaped(self):
