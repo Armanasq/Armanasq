@@ -1,0 +1,196 @@
+{
+  "events": [
+    {
+      "action": "Pushed code",
+      "date": "2026-11-09T14:08:32Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Pushed code",
+      "date": "2026-11-09T13:14:07Z",
+      "repository": "Armanasq/Armanasq.github.io",
+      "url": "https://github.com/Armanasq/Armanasq.github.io"
+    },
+    {
+      "action": "Issue: assigned",
+      "date": "2026-11-09T18:41:43Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Issue: opened",
+      "date": "2026-11-09T18:26:07Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Pushed code",
+      "date": "2026-11-09T12:43:58Z",
+      "repository": "Armanasq/Armanasq.github.io",
+      "url": "https://github.com/Armanasq/Armanasq.github.io"
+    },
+    {
+      "action": "Pushed code",
+      "date": "2026-11-09T13:36:04Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Pull request: merged",
+      "date": "2026-11-09T17:37:56Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "action": "Pull request: merged",
+      "date": "2026-11-09T17:57:09Z",
+      "repository": "Armanasq/phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    }
+  ],
+  "events_status": "available",
+  "featured": [
+    {
+      "area": "Physics-informed learning",
+      "description": "Quaternion orientation estimation with IMU data",
+      "language": null,
+      "name": "TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation",
+      "pushed_at": "2024-11-13T06:38:38Z",
+      "stars": 10,
+      "url": "https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation"
+    },
+    {
+      "area": "Inertial state estimation",
+      "description": "Deep-learning approach to 6DoF attitude estimation",
+      "language": "Python",
+      "name": "End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU",
+      "pushed_at": "2024-05-12T14:35:58Z",
+      "stars": 65,
+      "url": "https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU"
+    },
+    {
+      "area": "Robotics and mapping",
+      "description": "Localization and mapping systems",
+      "language": "Python",
+      "name": "OpenSLAM",
+      "pushed_at": "2025-11-15T08:31:23Z",
+      "stars": 4,
+      "url": "https://github.com/Armanasq/OpenSLAM"
+    },
+    {
+      "area": "Research operations",
+      "description": "AI-assisted academic application and research workflows",
+      "language": "Python",
+      "name": "phd_tracker",
+      "pushed_at": "2026-11-09T19:05:03Z",
+      "stars": 0,
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "area": "Visual odometry",
+      "description": "Neural visual odometry",
+      "language": "Python",
+      "name": "Deep-VO",
+      "pushed_at": "2023-05-27T10:14:49Z",
+      "stars": 1,
+      "url": "https://github.com/Armanasq/Deep-VO"
+    },
+    {
+      "area": "Medical imaging",
+      "description": "Volumetric lesion segmentation",
+      "language": null,
+      "name": "3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation",
+      "pushed_at": "2025-11-05T14:56:24Z",
+      "stars": 0,
+      "url": "https://github.com/Armanasq/3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation"
+    },
+    {
+      "area": "Navigation research",
+      "description": "Autonomous-navigation literature and methods",
+      "language": "HTML",
+      "name": "Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation",
+      "pushed_at": "2024-02-08T12:01:43Z",
+      "stars": 3,
+      "url": "https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation"
+    },
+    {
+      "area": "Medical AI",
+      "description": "Public competition research material",
+      "language": "Jupyter Notebook",
+      "name": "The-Health-and-Medicine-OxML-competition-track",
+      "pushed_at": "2024-05-12T14:36:35Z",
+      "stars": 5,
+      "url": "https://github.com/Armanasq/The-Health-and-Medicine-OxML-competition-track"
+    }
+  ],
+  "generated_at_utc": "2026-11-09T19:05:14+00:00",
+  "language_repository_counts": {
+    "C++": 1,
+    "HTML": 2,
+    "Jupyter Notebook": 8,
+    "MATLAB": 12,
+    "Python": 12,
+    "TeX": 2
+  },
+  "limitations": [
+    "Only public repositories are included; private work is intentionally excluded.",
+    "Stars are summed across original public repositories and are not unique people.",
+    "Event API exposes a bounded recent sample, not a complete contribution history.",
+    "Language counts measure the number of repositories with that primary language.",
+    "Repository pushed_at timestamps do not measure research quality or completion."
+  ],
+  "login": "Armanasq",
+  "recent_public_repository_pushes": [
+    {
+      "date": "2026-11-09T19:05:03Z",
+      "name": "phd_tracker",
+      "url": "https://github.com/Armanasq/phd_tracker"
+    },
+    {
+      "date": "2026-11-09T19:05:00Z",
+      "name": "Armanasq",
+      "url": "https://github.com/Armanasq/Armanasq"
+    },
+    {
+      "date": "2026-11-09T18:09:29Z",
+      "name": "Armanasq.github.io",
+      "url": "https://github.com/Armanasq/Armanasq.github.io"
+    },
+    {
+      "date": "2026-11-05T21:37:55Z",
+      "name": "sop",
+      "url": "https://github.com/Armanasq/sop"
+    },
+    {
+      "date": "2026-07-11T06:27:28Z",
+      "name": "qnav",
+      "url": "https://github.com/Armanasq/qnav"
+    },
+    {
+      "date": "2026-06-26T20:34:27Z",
+      "name": "ddx",
+      "url": "https://github.com/Armanasq/ddx"
+    },
+    {
+      "date": "2026-06-03T13:21:18Z",
+      "name": "Fin-Agent",
+      "url": "https://github.com/Armanasq/Fin-Agent"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Public GitHub REST API; original and forked owned repositories",
+  "sources": [
+    "https://api.github.com/users/Armanasq",
+    "https://api.github.com/users/Armanasq/repos",
+    "https://api.github.com/users/Armanasq/events/public"
+  ],
+  "statistics": {
+    "forks": 12,
+    "original_public_repositories": 48,
+    "public_followers": 42,
+    "public_repositories": 60,
+    "sampled_public_events": 23,
+    "stars_on_original_public_repositories": 155
+  }
+}
