@@ -57,6 +57,7 @@ GitHub data is refreshed by an automated workflow. Charts show **public informat
 
 <p align="center"><img src="./assets/live/overview.svg" width="100%" alt="Public GitHub repositories and selected open-source metrics"></p>
 <p align="center"><img src="./assets/live/activity.svg" width="100%" alt="Recent verified public repository activity"></p>
+<p align="center"><img src="./assets/live/research-radar.svg" width="100%" alt="Public research repository radar with latest push timestamps and repository stars"></p>
 
 ### Lowlighter metrics laboratory
 

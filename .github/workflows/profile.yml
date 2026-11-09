@@ -1,0 +1,176 @@
+name: Research profile instrumentation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 5 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile.yml"
+      - "scripts/profile_refresh.py"
+      - "tests/test_profile_refresh.py"
+      - "config/featured.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-profile-telemetry
+  cancel-in-progress: false
+
+jobs:
+  profile:
+    name: Verify, refresh and publish public metrics
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Configure Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate verifiable GitHub snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/profile_refresh.py --user Armanasq --config config/featured.json --out assets/live --snapshot data/public-snapshot.json
+
+      - name: Validate generated SVG and JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+          files = sorted(Path("assets/live").glob("*.svg"))
+          assert len(files) >= 4
+          for file in files:
+              root = ET.parse(file).getroot()
+              assert root.tag == "{http://www.w3.org/2000/svg}svg"
+          data = json.loads(Path("data/public-snapshot.json").read_text())
+          assert data["schema_version"] == 1
+          assert data["login"] == "Armanasq"
+          assert all(item["url"].startswith("https://github.com/Armanasq/") for item in data["featured"])
+          print("Validated", len(files), "SVG assets and public snapshot")
+          PY
+
+      - name: Commit verified public telemetry only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live/ data/public-snapshot.json
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(profile): refresh verified public telemetry [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Lowlighter - engineering signals
+        id: engineering
+        continue-on-error: true
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        with:
+          token: ${{ github.token }}
+          user: Armanasq
+          repo: Armanasq
+          output_action: commit
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: assets/metrics/engineering.svg
+          base: header
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+          plugin_habits: yes
+          plugin_habits_days: 30
+          plugin_habits_charts: yes
+          plugin_followup: yes
+
+      - name: Lowlighter - timeline and isometric calendar
+        id: chronicle
+        continue-on-error: true
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        with:
+          token: ${{ github.token }}
+          user: Armanasq
+          repo: Armanasq
+          output_action: commit
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: assets/metrics/chronicle.svg
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_activity: yes
+          plugin_activity_visibility: public
+          plugin_activity_limit: 6
+          plugin_activity_days: 30
+
+      - name: Lowlighter - recognitions and contributions
+        id: recognition
+        continue-on-error: true
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        with:
+          token: ${{ github.token }}
+          user: Armanasq
+          repo: Armanasq
+          output_action: commit
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: assets/metrics/recognition.svg
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_notable: yes
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 12
+
+      - name: Lowlighter - open-source ecosystem
+        id: ecosystem
+        continue-on-error: true
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        with:
+          token: ${{ github.token }}
+          user: Armanasq
+          repo: Armanasq
+          output_action: commit
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: assets/metrics/ecosystem.svg
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_pinned: 6
+          plugin_repositories_starred: 3
+          plugin_repositories_forks: no
+          plugin_topics: yes
+          plugin_topics_limit: 12
+          plugin_stars: yes
+          plugin_stars_limit: 5
+          plugin_licenses: yes
+
+      - name: Report optional plugin failures
+        if: always()
+        env:
+          ENGINEERING: ${{ steps.engineering.outcome }}
+          CHRONICLE: ${{ steps.chronicle.outcome }}
+          RECOGNITION: ${{ steps.recognition.outcome }}
+          ECOSYSTEM: ${{ steps.ecosystem.outcome }}
+        run: |
+          for result in "$ENGINEERING" "$CHRONICLE" "$RECOGNITION" "$ECOSYSTEM"; do
+            if [ "$result" = "failure" ]; then
+              echo "::warning::An optional Lowlighter panel failed; previous asset remains in place"
+            fi
+          done

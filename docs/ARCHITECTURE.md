@@ -4,11 +4,11 @@ The public GitHub profile README is the product. It is rendered by GitHub, not b
 
 ## Data flows
 
-1. \`scripts/profile_refresh.py\` calls GitHub's public REST API with an optional GitHub Actions token.
+1. `scripts/profile_refresh.py` calls GitHub's public REST API with an optional GitHub Actions token.
 2. It enumerates **public repositories owned by Armanasq**, excludes private repositories and other owners, and records a bounded sample of public events.
-3. It reads \`config/featured.json\` to select public projects and supply editorial research-area labels. Only matching verified public repositories appear in the generated radar.
-4. It generates \`data/public-snapshot.json\` alongside SVG assets in \`assets/live/\`. The lineage panel stores a digest of the exact JSON snapshot and a generation timestamp.
-5. The Lowlighter Metrics GitHub Action refreshes the four \`assets/metrics/*.svg\` panels with additional GitHub telemetry. When an integration is unavailable, a labelled placeholder remains rather than inventing data.
+3. It reads `config/featured.json` to select public projects and supply editorial research-area labels. Only matching verified public repositories appear in the generated radar.
+4. It generates `data/public-snapshot.json` alongside SVG assets in `assets/live/`. The lineage panel stores a digest of the exact JSON snapshot and a generation timestamp.
+5. The Lowlighter Metrics GitHub Action refreshes the four `assets/metrics/*.svg` panels with additional GitHub telemetry. When an integration is unavailable, a labelled placeholder remains rather than inventing data.
 6. GitHub renders the updated README from the default branch.
 
 ## What this profile measures
@@ -28,11 +28,11 @@ The public GitHub profile README is the product. It is rendered by GitHub, not b
 - Inferred achievement badges, fabricated awards, paper acceptance, total private contributions, and imagined project milestones are not displayed.
 - GitHub usernames are validated before constructing API paths. Dynamic strings are escaped before rendering SVG.
 - The generator uses Python standard library only; no API keys are written to the repository.
-- The snapshot is public metadata; review \`data/public-snapshot.json\` before publishing if changing the generator's data scope.
+- The snapshot is public metadata; review `data/public-snapshot.json` before publishing if changing the generator's data scope.
 
 ## Automation
 
-\`.github/workflows/profile.yml\` refreshes assets on a daily schedule and allows manual execution. It has explicit \`contents: write\` permissions to commit generated changes. Repository Actions settings must permit workflow write access. The default \`GITHUB_TOKEN\` is used; no external paid service is required for the basic snapshot.
+`.github/workflows/profile.yml` refreshes assets on a daily schedule and allows manual execution. It has explicit `contents: write` permissions to commit generated changes. Repository Actions settings must permit workflow write access. The default `GITHUB_TOKEN` is used; no external paid service is required for the basic snapshot.
 
 Lowlighter currently uses a pinned upstream action version. Some advanced plugins may depend on specific GitHub API permissions and can fail to render with the default token. The workflow treats optional plugin generation as best effort and preserves labelled fallback assets. Missing statistics are not considered zero.
 
@@ -42,9 +42,9 @@ Custom header, research map, evidence-loop infographic, radar, and provenance pa
 
 ## Development
 
-\`\`\`bash
+```bash
 python -m unittest discover -s tests -v
 GH_TOKEN= python scripts/profile_refresh.py --user Armanasq
-\`\`\`
+```
 
 The second command requires access to GitHub's public API. To verify a change without network access, run the unit tests using mocked API responses.
