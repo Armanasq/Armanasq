@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "featured": [
+    {
+      "name": "TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation",
+      "area": "Physics-informed learning",
+      "description": "Quaternion orientation estimation with IMU data"
+    },
+    {
+      "name": "End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU",
+      "area": "Inertial state estimation",
+      "description": "Deep-learning approach to 6DoF attitude estimation"
+    },
+    {
+      "name": "OpenSLAM",
+      "area": "Robotics and mapping",
+      "description": "Localization and mapping systems"
+    },
+    {
+      "name": "phd_tracker",
+      "area": "Research operations",
+      "description": "AI-assisted academic application and research workflows"
+    },
+    {
+      "name": "Deep-VO",
+      "area": "Visual odometry",
+      "description": "Neural visual odometry"
+    },
+    {
+      "name": "3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation",
+      "area": "Medical imaging",
+      "description": "Volumetric lesion segmentation"
+    },
+    {
+      "name": "Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation",
+      "area": "Navigation research",
+      "description": "Autonomous-navigation literature and methods"
+    },
+    {
+      "name": "The-Health-and-Medicine-OxML-competition-track",
+      "area": "Medical AI",
+      "description": "Public competition research material"
+    }
+  ]
+}
