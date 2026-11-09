@@ -1,125 +1,67 @@
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-    <img src="./assets/hero-dark.svg" width="100%" alt="Arman Asgharpoor Golroudbari — agentic AI, research engineering, robotics, and evidence-grounded systems">
-  </picture>
-</div>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/visuals/research-hero.svg"><source media="(prefers-color-scheme: light)" srcset="./assets/visuals/research-hero.svg"><img alt="Arman Asgharpoor Golroudbari · evidence-grounded AI engineering and research systems" src="./assets/visuals/research-hero.svg" width="100%"></picture>
 
-<p align="center">
-  <a href="#research-directions">Research</a> &nbsp;·&nbsp;
-  <a href="#selected-public-work">Open-source systems</a> &nbsp;·&nbsp;
-  <a href="#research-method">Method</a> &nbsp;·&nbsp;
-  <a href="#live-github-instrumentation">Telemetry</a> &nbsp;·&nbsp;
-  <a href="#writing-and-publications">Publications</a>
-</p>
+<p align="center"><a href="#contributions-in-perspective">3D contributions</a> &nbsp; · &nbsp; <a href="#the-project-skyline">Project skyline</a> &nbsp; · &nbsp; <a href="#research-universe">Research universe</a> &nbsp; · &nbsp; <a href="#research-evidence">Evidence</a> &nbsp; · &nbsp; <a href="#lowlighter-metrics">Metrics</a></p>
 
-I develop **agentic AI and research systems** that connect scientific investigation with reliable software. My interests span persistent learning and generalization, multi-turn clinical reasoning, evidence retrieval, inertial state estimation, robotics, and applied machine learning.
+**Agentic AI engineer · Applied machine learning researcher · Robotics and navigation · Clinical AI.** I build source-grounded systems that preserve state, expose uncertainty, and survive evaluation beyond polished demonstrations.
 
-Rather than treating benchmarks, demos, or model outputs as evidence on their own, I focus on **source provenance, explicit system state, reproducible evaluation, and measurable failure modes**.
+## Contributions in perspective
 
-## Research directions
+<img src="./assets/visuals/contributions-3d.svg" width="100%" alt="Three-dimensional isometric GitHub contribution calendar, sourced from verified public contribution data">
 
-| Research programme | Central technical question | Current surface |
+The isometric calendar is generated from GitHub's own daily contribution data. If the API cannot supply a complete period, the visualization explicitly reports the gap; it never uses fabricated activity. [Inspect the underlying data](./data/contributions.json).
+
+## The project skyline
+
+<img src="./assets/visuals/project-skyline.svg" width="100%" alt="Source-grounded three-dimensional bars for public GitHub repository stars">
+
+<sub>Data source: [public GitHub repository snapshot](./data/public-snapshot.json). Tower heights have a linear scale; labels show exact star counts. Private research is excluded.</sub>
+
+## Research universe
+
+<img src="./assets/visuals/research-orbit.svg" width="100%" alt="Orbital isometric illustration connecting research in agentic AI, robotic navigation, clinical reasoning and state estimation">
+
+<details><summary><b>Explore the research programmes and verified repositories</b></summary>
+
+| Direction | Research question | Public reference |
 |:---|:---|:---|
-| **APEX-G** · adaptive problem-solving | How should agents acquire, retain, and transfer capabilities across tasks? | Active research; source repository is private |
-| **Clinical reasoning systems** | How can multi-turn agents maintain state and connect conclusions to auditable clinical evidence? | Private implementation; public technical context below |
-| **State estimation and navigation** | How can learned models respect physical constraints and operate under sensor uncertainty? | [TE-PINN](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) · [IMU attitude estimation](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) |
-| **Research operations** | How do we make literature, decisions, evaluations, and action history inspectable? | [PhD Tracker](https://github.com/Armanasq/phd_tracker) |
+| **APEX-G / adaptive learning** | How can agents generalize, persist knowledge, and improve over tasks? | Research in progress; source repository is private |
+| **Evidence-grounded clinical AI** | How can multi-turn reasoning preserve state, provenance and safety? | Private implementation; no public repo link |
+| **Physics-informed estimation** | Can learned state estimation satisfy kinematic constraints? | [TE-PINN](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) |
+| **Inertial navigation** | How should learned systems estimate orientation under sensor uncertainty? | [6DoF IMU attitude estimation](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) |
+| **Robotic mapping** | How can systems integrate perception, localization, and mapping? | [OpenSLAM](https://github.com/Armanasq/OpenSLAM), [Deep-VO](https://github.com/Armanasq/Deep-VO) |
+| **Research operations** | How can automated research workflows retain traceability? | [PhD Tracker](https://github.com/Armanasq/phd_tracker) |
 
-## Selected public work
-
-| System / research artifact | What it demonstrates |
-|:---|:---|
-| [**TE-PINN — Transformer-Enhanced Physics-Informed Orientation Estimation**](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) | Quaternion kinematics, physics-informed learning, and IMU orientation estimation |
-| [**End-to-End Inertial Attitude Estimation (6DoF IMU)**](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) | Neural inertial-attitude estimation associated with the 2023 Measurement publication |
-| [**OpenSLAM**](https://github.com/Armanasq/OpenSLAM) | Exploration of localization, mapping, and open robotics systems |
-| [**PhD Tracker**](https://github.com/Armanasq/phd_tracker) | Research-application tracking, structured workflows, and automation |
-| [**Deep-VO**](https://github.com/Armanasq/Deep-VO) | Deep-learning approaches to visual odometry |
-| [**3D Attention U-Net for MS lesion segmentation**](https://github.com/Armanasq/3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation) | Volumetric medical image segmentation |
-| [**Autonomous Navigation: Deep Learning Survey**](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation) | Literature-driven study of navigation and mapping methods |
-
-Public links are shown only for repositories verified as public. Private research is not used in the telemetry calculations.
-
-## Research method
-
-<p align="center"><img src="./assets/evidence-loop.svg" width="100%" alt="Research methodology: question, evidence, system, evaluation, release"></p>
-
-<details>
-<summary><b>Open research architecture</b> — a cross-domain map of the problems I study</summary>
-<br>
-<p align="center"><img src="./assets/research-map.svg" width="100%" alt="A research relationship map connecting agentic intelligence, clinical reasoning, robotic state estimation, and research infrastructure"></p>
 </details>
 
-## Live GitHub instrumentation
+## Research evidence
 
-GitHub data is refreshed by an automated workflow. Charts show **public information only**, with the date and scope defined in the generated source snapshot. Repository language bytes are **not** a measure of programming ability.
+<img src="./assets/live/readiness.svg" width="100%" alt="Evidence file-presence matrix sourced from the default branches of verified public repositories">
 
-<p align="center"><img src="./assets/live/overview.svg" width="100%" alt="Public GitHub repositories and selected open-source metrics"></p>
-<p align="center"><img src="./assets/live/activity.svg" width="100%" alt="Recent verified public repository activity"></p>
-<p align="center"><img src="./assets/live/research-radar.svg" width="100%" alt="Public research repository radar with latest push timestamps and repository stars"></p>
+<details><summary><b>Research pipeline: from question to reproducible system</b></summary><img src="./assets/evidence-loop.svg" width="100%" alt="Question, evidence, implementation, evaluation, release"></details>
 
-<details>
-<summary><b>Open the research constellation</b> · a source-backed map of selected public projects</summary>
-<br>
-<p align="center"><img src="./assets/live/constellation.svg" width="100%" alt="Source-grounded project constellation, with actual star counts, GitHub push dates, and editorial research categories"></p>
-<sub>Links represent an editorial research taxonomy, not measured co-authorship or project similarity. Node sizes are equal and do not encode scores.</sub>
+File markers indicate only whether documentation, tests, workflows, licence, citation, or environment files exist; they do not demonstrate empirical quality or test success.
+
+## Lowlighter metrics
+
+The following panels are generated with [Lowlighter Metrics](https://github.com/lowlighter/metrics) when upstream rendering succeeds. Source-backed public data is displayed as a fallback if it does not.
+
+<table><tr><td width="50%"><img src="./assets/metrics/engineering.svg" alt="Repository language and engineering metrics" width="100%"/></td><td width="50%"><img src="./assets/metrics/recognition.svg" alt="GitHub recognition and community metrics" width="100%"/></td></tr><tr><td><img src="./assets/metrics/chronicle.svg" alt="Isometric activity calendar and public events" width="100%"/></td><td><img src="./assets/metrics/ecosystem.svg" alt="Open-source ecosystem and topic metrics" width="100%"/></td></tr></table>
+
+<details><summary><b>Provenance, verified activity and full repository radar</b></summary>
+<img src="./assets/live/overview.svg" width="100%" alt="Public GitHub repository statistics">
+<img src="./assets/live/activity.svg" width="100%" alt="Recent public activity">
+<img src="./assets/live/research-radar.svg" width="100%" alt="Source backed research repository radar">
+<img src="./assets/live/lineage.svg" width="100%" alt="Snapshot freshness and source lineage">
 </details>
 
-### Evidence footprint
+## Publications and technical writing
 
-This original, self-updating matrix inspects each featured public repository's default-branch file tree for README, tests, workflow, license, citation, and setup-file markers. **File presence does not prove a test passes, research replicates, or software is production-ready.** Missing and unavailable evidence are distinguished.
-
-<p align="center"><img src="./assets/live/readiness.svg" width="100%" alt="Per-repository documented file-presence matrix, with unknown values for incomplete API evidence"></p>
-
-### Lowlighter metrics laboratory
-
-Extended metrics use the [Lowlighter Metrics](https://github.com/lowlighter/metrics) engine, including recognition, notable work, language distribution, habits, repository topics, community, and an isometric contribution calendar. Each panel is published as a versioned repository asset; a missing API scope must not be represented by a fabricated zero.
-
-<details open>
-<summary><b>Research footprint</b> · languages, code, and development activity</summary>
-<br>
-<img src="./assets/metrics/engineering.svg" width="100%" alt="Languages, coding activity, and repository statistics">
-</details>
-
-<details open>
-<summary><b>Contributions in time</b> · isometric calendar and recent activity</summary>
-<br>
-<img src="./assets/metrics/chronicle.svg" width="100%" alt="Isometric contributions and recent public activity">
-</details>
-
-<details>
-<summary><b>Recognition &amp; collaborators</b> · achievements, notable contributions, and people</summary>
-<br>
-<img src="./assets/metrics/recognition.svg" width="100%" alt="GitHub achievements, notable contributions, and public community metrics">
-</details>
-
-<details>
-<summary><b>Open-source ecosystem</b> · repositories, topics, stars, and license footprint</summary>
-<br>
-<img src="./assets/metrics/ecosystem.svg" width="100%" alt="Featured repositories, topics, community interest, and license statistics">
-</details>
-
-<details>
-<summary><b>Data lineage</b> · provenance and freshness</summary>
-<br>
-<img src="./assets/live/lineage.svg" width="100%" alt="Data source and update provenance for this profile">
-</details>
-
-## Writing and publications
-
-- [**End-to-End Deep Learning Framework for Real-Time Inertial Attitude Estimation using 6DoF IMU**](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) — *Measurement* (2023); research code.
-- [**Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation**](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation) — survey repository.
-- [**TE-PINN: Quaternion Orientation Estimation**](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) — experimental implementation; no unverified publication or acceptance claim.
-
-## Engineering principles
-
-**Evidence before interpretation.** **Explicit state before elaborate orchestration.** **Baselines before novelty claims.** **Reproducibility before presentation.**
-
-Work typically uses Python, PyTorch, SQL, CUDA, ROS, containerized infrastructure, and production-oriented inference systems. The relevant tool is selected by the technical requirement, not by a technology badge.
+- [End-to-End Deep Learning Framework for Real-Time Inertial Attitude Estimation using 6DoF IMU](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) — *Measurement* (2023), research code.
+- [Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation) — survey materials.
+- [TE-PINN orientation estimation](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) — experimental implementation, with no invented publication status.
 
 ---
 
-<sub>GitHub · <a href="https://github.com/Armanasq">Armanasq</a> &nbsp; / &nbsp; <a href="https://www.linkedin.com/in/asgharpoor/">LinkedIn</a> &nbsp; / &nbsp; <a href="mailto:A.Asgharpoor@ut.ac.ir">Email</a> &nbsp; / &nbsp; <a href="./docs/ARCHITECTURE.md">How this profile works</a></sub>
+**Evidence before interpretation. Baselines before novelty. Explicit state before elaborate orchestration.**
 
-<sub>Custom visuals are authored for this repository; telemetry uses public GitHub data and <a href="https://github.com/lowlighter/metrics">Lowlighter Metrics</a>. Private repository data is intentionally excluded from public snapshots.</sub>
+[GitHub](https://github.com/Armanasq) · [LinkedIn](https://www.linkedin.com/in/asgharpoor/) · [Research architecture](./docs/ARCHITECTURE.md) · [Email](mailto:A.Asgharpoor@ut.ac.ir)
