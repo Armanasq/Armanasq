@@ -39,7 +39,7 @@ jobs:
 
       - name: Refresh original isometric visuals
         env:
-          GH_TOKEN: \${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           python scripts/render_profile_art.py --user Armanasq --snapshot data/public-snapshot.json --contributions data/contributions.json --output assets/visuals
 
