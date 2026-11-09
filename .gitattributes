@@ -1,0 +1,3 @@
+assets/live/*.svg linguist-generated=true
+assets/metrics/*.svg linguist-generated=true
+data/public-snapshot.json linguist-generated=true

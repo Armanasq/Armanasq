@@ -59,6 +59,12 @@ GitHub data is refreshed by an automated workflow. Charts show **public informat
 <p align="center"><img src="./assets/live/activity.svg" width="100%" alt="Recent verified public repository activity"></p>
 <p align="center"><img src="./assets/live/research-radar.svg" width="100%" alt="Public research repository radar with latest push timestamps and repository stars"></p>
 
+### Evidence footprint
+
+This original, self-updating matrix inspects each featured public repository's default-branch file tree for README, tests, workflow, license, citation, and setup-file markers. **File presence does not prove a test passes, research replicates, or software is production-ready.** Missing and unavailable evidence are distinguished.
+
+<p align="center"><img src="./assets/live/readiness.svg" width="100%" alt="Per-repository documented file-presence matrix, with unknown values for incomplete API evidence"></p>
+
 ### Lowlighter metrics laboratory
 
 Extended metrics use the [Lowlighter Metrics](https://github.com/lowlighter/metrics) engine, including recognition, notable work, language distribution, habits, repository topics, community, and an isometric contribution calendar. Each panel is published as a versioned repository asset; a missing API scope must not be represented by a fabricated zero.

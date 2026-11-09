@@ -53,10 +53,12 @@ jobs:
           from pathlib import Path
           from xml.etree import ElementTree as ET
           files = sorted(Path("assets/live").glob("*.svg"))
-          assert len(files) >= 4
+          assert len(files) >= 5
           for file in files:
               root = ET.parse(file).getroot()
               assert root.tag == "{http://www.w3.org/2000/svg}svg"
+          for file in sorted(Path("assets/metrics").glob("*.svg")):
+              ET.parse(file)
           data = json.loads(Path("data/public-snapshot.json").read_text())
           assert data["schema_version"] == 1
           assert data["login"] == "Armanasq"

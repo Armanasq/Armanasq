@@ -8,7 +8,7 @@ The public GitHub profile README is the product. It is rendered by GitHub, not b
 2. It enumerates **public repositories owned by Armanasq**, excludes private repositories and other owners, and records a bounded sample of public events.
 3. It reads `config/featured.json` to select public projects and supply editorial research-area labels. Only matching verified public repositories appear in the generated radar.
 4. It generates `data/public-snapshot.json` alongside SVG assets in `assets/live/`. The lineage panel stores a digest of the exact JSON snapshot and a generation timestamp.
-5. The Lowlighter Metrics GitHub Action refreshes the four `assets/metrics/*.svg` panels with additional GitHub telemetry. When an integration is unavailable, a labelled placeholder remains rather than inventing data.
+5. The Lowlighter Metrics GitHub Action refreshes the four `assets/metrics/*.svg` panels with additional GitHub telemetry. When an integration is unavailable, source-backed local fallback SVGs provide public statistics rather than invented plugin output.
 6. GitHub renders the updated README from the default branch.
 
 ## What this profile measures
@@ -19,6 +19,13 @@ The public GitHub profile README is the product. It is rendered by GitHub, not b
 - A bounded sample of the account's public events, with an explicit unavailable state.
 - Repository push timestamps and the selected research-repository view.
 - Additional language, community, calendar, notable, and open-source metrics calculated by the Lowlighter engine.
+
+## Novel verification surfaces
+
+- The **research repository radar** joins curated project identities with live GitHub push timestamps and stars.
+- The **research evidence footprint** checks the default-branch trees of public projects for six file-presence markers (README, tests, workflows, license, citation, setup). A marker is not a quality rating and does not assert that any code or experiment passed.
+- The **provenance panel** records exact source endpoints, refresh time and a snapshot digest.
+- Public-source fallback metrics prevent a broken external renderer from leaving empty, misleading panels.
 
 ## Limitations and privacy
 

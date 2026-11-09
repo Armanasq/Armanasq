@@ -88,6 +88,70 @@ def list_public_repositories(login, token):
     return results
 
 
+SIGNAL_NAMES = ("readme", "tests", "workflows", "license", "citation", "setup")
+
+
+def file_marker_signals(tree):
+    if not isinstance(tree, dict) or tree.get("truncated"):
+        return {name: None for name in SIGNAL_NAMES}
+    entries = tree.get("tree")
+    if not isinstance(entries, list):
+        return {name: None for name in SIGNAL_NAMES}
+    paths = {
+        str(item.get("path", "")).lower()
+        for item in entries
+        if item.get("type") == "blob"
+    }
+    readmes = {"readme.md", "readme.rst", "readme.txt"}
+    licenses = {"license", "license.md", "license.txt", "copying", "copying.md"}
+    citations = {"citation.cff", ".github/citation.cff", "citation.bib"}
+    setup_files = {
+        "requirements.txt", "pyproject.toml", "setup.py", "environment.yml",
+        "environment.yaml", "dockerfile", "package.json", "cargo.toml",
+        "go.mod", "pom.xml", "uv.lock", "poetry.lock", "pipfile",
+    }
+    test_ext = (".py", ".rs", ".go", ".java", ".cpp", ".cc", ".js", ".jsx", ".ts", ".tsx")
+    tests = any(
+        path.startswith(("tests/", "test/", "__tests__/"))
+        and path.endswith(test_ext)
+        for path in paths
+    )
+    return {
+        "readme": bool(paths & readmes),
+        "tests": tests,
+        "workflows": any(
+            path.startswith(".github/workflows/") and path.endswith((".yml", ".yaml"))
+            for path in paths
+        ),
+        "license": bool(paths & licenses),
+        "citation": bool(paths & citations),
+        "setup": bool(paths & setup_files),
+    }
+
+
+def inspect_public_repo(repo, token):
+    fullname = repo.get("full_name")
+    branch = repo.get("default_branch")
+    if not fullname or not branch:
+        return {"status": "unavailable", "source": None,
+                "checks": {name: None for name in SIGNAL_NAMES}}
+    path = (
+        "/repos/" + urllib.parse.quote(fullname, safe="/")
+        + "/git/trees/" + urllib.parse.quote(branch, safe="") + "?recursive=1"
+    )
+    try:
+        tree = fetch_json(path, token)
+    except RuntimeError:
+        return {"status": "unavailable", "source": API + path,
+                "checks": {name: None for name in SIGNAL_NAMES}}
+    truncated = not isinstance(tree, dict) or bool(tree.get("truncated"))
+    return {
+        "status": "incomplete" if truncated else "complete",
+        "source": API + path,
+        "checks": file_marker_signals(tree),
+    }
+
+
 def event_label(event):
     kind = event.get("type", "")
     payload = event.get("payload") or {}
@@ -134,6 +198,8 @@ def build_snapshot(login, featured, token=""):
         if (item.get("repo") or {}).get("name", "").startswith(login + "/")
     ]
 
+    events.sort(key=lambda item: item.get("date") or "", reverse=True)
+
     public = {item.get("name", "").casefold(): item for item in repos}
     selected = []
     for record in featured:
@@ -150,6 +216,7 @@ def build_snapshot(login, featured, token=""):
                 "stars": item.get("stargazers_count", 0),
                 "pushed_at": item.get("pushed_at"),
                 "language": item.get("language"),
+                "file_signals": inspect_public_repo(item, token),
             }
         )
 
@@ -182,6 +249,9 @@ def build_snapshot(login, featured, token=""):
             API + f"/users/{quoted}",
             API + f"/users/{quoted}/repos",
             API + f"/users/{quoted}/events/public",
+        ] + [
+            item["file_signals"]["source"] for item in selected
+            if item["file_signals"]["source"]
         ],
         "limitations": [
             "Only public repositories are included; private work is intentionally excluded.",
@@ -295,6 +365,112 @@ def radar_svg(snapshot):
     )
 
 
+def readiness_svg(snapshot):
+    columns = [
+        ("README", "readme", 582),
+        ("TESTS", "tests", 676),
+        ("WORKFLOW", "workflows", 773),
+        ("LICENSE", "license", 877),
+        ("CITE", "citation", 968),
+        ("SETUP", "setup", 1044),
+    ]
+    featured = snapshot.get("featured", [])[:8]
+    height = 140 + 53 * max(1, len(featured)) + 38
+    parts = [
+        label(27, 40, "RESEARCH EVIDENCE FOOTPRINT", 23, FG, 700),
+        label(27, 66, "Default-branch file markers, not a test pass rate or research-quality score", 14, MUTED),
+        label(27, 112, "CURATED PUBLIC REPOSITORY", 12, MUTED, 700),
+    ]
+    for heading, _, x in columns:
+        parts.append(label(x, 112, heading, 12, MUTED, 700, "middle"))
+    for index, item in enumerate(featured):
+        y = 146 + index * 53
+        parts.append(
+            f'<rect x="26" y="{y-22}" width="1047" height="46" rx="6" '
+            f'fill="{PANEL if index % 2 == 0 else BG}"/>'
+        )
+        parts.append(label(42, y + 6, compact(item["name"], 46), 15, FG, 600))
+        checks = item.get("file_signals", {}).get("checks", {})
+        for _, key, x in columns:
+            value = checks.get(key)
+            mark = "YES" if value is True else "NO" if value is False else "?"
+            color = MINT if value is True else MUTED if value is False else GOLD
+            parts.append(label(x, y + 6, mark, 13, color, 700, "middle"))
+    if not featured:
+        parts.append(label(40, 153, "No selected public projects available", 16, MUTED))
+    parts.append(label(27, height - 18,
+        "YES: marker found  /  NO: marker absent  /  ?: API result incomplete. Presence does not establish correctness.",
+        12, MUTED))
+    return svg_frame(
+        "Public research evidence footprint",
+        "Inspectability matrix derived from GitHub default-branch trees; checks indicate file presence only.",
+        height, "".join(parts)
+    )
+
+
+def local_fallback_metrics(snapshot):
+    stats = snapshot["statistics"]
+    lang = list(snapshot.get("language_repository_counts", {}).items())[:7]
+    engineering = panel(
+        "PRIMARY LANGUAGES / PUBLIC REPOSITORIES",
+        "Count of original public repositories grouped by primary language",
+        [(key, str(value) + " repositories") for key, value in lang]
+        or [("Language metadata", "Not available")],
+        "Local public-GitHub fallback. Language counts are not lines of code.",
+    )
+    events = snapshot.get("events", [])
+    chronicle = panel(
+        "PUBLIC ACTIVITY / VERIFIED EVENTS",
+        "Event API sample. An isometric calendar requires a successful Lowlighter render.",
+        [(day(item["date"]) + "  " + item["action"], compact(item["repository"], 42))
+         for item in events[:5]] or [("Event feed", snapshot["events_status"])],
+        "Local public-GitHub fallback. Not a complete contribution calendar.",
+    )
+    recognition = panel(
+        "PUBLIC COMMUNITY / FACTUAL SIGNALS",
+        "Verified public signals; GitHub achievements are rendered by Lowlighter when available.",
+        [
+            ("Public followers", str(stats["public_followers"])),
+            ("Stars on original public projects", str(stats["stars_on_original_public_repositories"])),
+            ("Public original repositories", str(stats["original_public_repositories"])),
+            ("Achievement and notable badges", "Upstream metrics unavailable"),
+        ],
+        "Local public-GitHub fallback. This view does not invent achievements.",
+    )
+    ecosystem = panel(
+        "FEATURED PUBLIC REPOSITORIES",
+        "Curated published research and engineering projects",
+        [(compact(item["name"], 63), str(item["stars"]) + " stars")
+         for item in sorted(snapshot.get("featured", []), key=lambda r: -r["stars"])[:6]]
+        or [("Featured public projects", "Not available")],
+        "Local public-GitHub fallback. Star counts are per repository.",
+    )
+    return {
+        "engineering.svg": engineering,
+        "chronicle.svg": chronicle,
+        "recognition.svg": recognition,
+        "ecosystem.svg": ecosystem,
+    }
+
+
+def write_metric_fallbacks(snapshot, assets_root):
+    output = assets_root / "metrics"
+    output.mkdir(parents=True, exist_ok=True)
+    for name, svg in local_fallback_metrics(snapshot).items():
+        path = output / name
+        if path.exists():
+            existing = path.read_text(encoding="utf-8")
+            if (
+                'data-generator="public-github-fallback"' not in existing
+                and "Initial panel" not in existing
+            ):
+                continue
+        svg = svg.replace(
+            "<svg ", '<svg data-generator="public-github-fallback" ', 1
+        )
+        path.write_text(svg, encoding="utf-8")
+
+
 def lineage_svg(snapshot, digest):
     rows = [
         ("Public repository data", "GitHub REST API"),
@@ -322,6 +498,7 @@ def write_profile(snapshot, output_dir, snapshot_path):
         "overview.svg": overview_svg(snapshot),
         "activity.svg": activity_svg(snapshot),
         "research-radar.svg": radar_svg(snapshot),
+        "readiness.svg": readiness_svg(snapshot),
         "lineage.svg": lineage_svg(snapshot, digest),
     }
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -329,6 +506,7 @@ def write_profile(snapshot, output_dir, snapshot_path):
     for filename, contents in files.items():
         (output_dir / filename).write_text(contents, encoding="utf-8")
     snapshot_path.write_text(canonical, encoding="utf-8")
+    write_metric_fallbacks(snapshot, output_dir.parent)
 
 
 def main():
