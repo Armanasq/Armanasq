@@ -58,6 +58,26 @@ class ProfileRefreshTests(unittest.TestCase):
         self.assertFalse(checks["license"])
         self.assertIsNone(p.file_marker_signals({"truncated": True})["license"])
 
+    def test_placeholder_panels_are_replaced_but_real_metrics_survive(self):
+        with tempfile.TemporaryDirectory() as temp:
+            folder = Path(temp)
+            panel = folder / 'metrics' / 'chronicle.svg'
+            panel.parent.mkdir(parents=True)
+            panel.write_text('<svg><desc>Live snapshot pending</desc></svg>')
+            snap = {
+                'statistics': {
+                    'public_followers': 2, 'stars_on_original_public_repositories': 3,
+                    'original_public_repositories': 1,
+                },
+                'language_repository_counts': {'Python': 1},
+                'events': [], 'events_status': 'available', 'featured': [],
+            }
+            p.write_metric_fallbacks(snap, folder)
+            self.assertIn('data-generator="public-github-fallback"', panel.read_text())
+            panel.write_text('<svg><title>Actual upstream metrics</title></svg>')
+            p.write_metric_fallbacks(snap, folder)
+            self.assertIn('Actual upstream metrics', panel.read_text())
+
     def test_written_svgs_and_digest_are_valid(self):
         snap = {
             'schema_version': 1, 'generated_at_utc': '2026-11-09T12:00:00+00:00',

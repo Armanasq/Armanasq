@@ -523,10 +523,14 @@ def write_metric_fallbacks(snapshot, assets_root):
         path = output / name
         if path.exists():
             existing = path.read_text(encoding="utf-8")
-            if (
-                'data-generator="public-github-fallback"' not in existing
-                and "Initial panel" not in existing
-            ):
+            can_replace = (
+                'data-generator="public-github-fallback"' in existing
+                or "Initial panel" in existing
+                or "Live snapshot pending" in existing
+                or "Live scan pending" in existing
+                or "Requires a successful Lowlighter action run" in existing
+            )
+            if not can_replace:
                 continue
         svg = svg.replace(
             "<svg ", '<svg data-generator="public-github-fallback" ', 1
