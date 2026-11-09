@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: public-profile-telemetry
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   profile:
