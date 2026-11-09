@@ -1,64 +1,126 @@
-<img src="./assets/visuals/atlas-hero.svg" alt="Arman · research engineering visual identity" width="100%">
+<p align="center"><img src="./assets/visuals/atlas-hero.svg" alt="Arman Asgharpoor Golroudbari — research engineering" width="100%"></p>
 
-<p align="center"><a href="#engineering-atlas">Engineering atlas</a> · <a href="#contribution-landscape">Contribution landscape</a> · <a href="#research-portfolio">Research portfolio</a> · <a href="#open-source-intelligence">Open-source intelligence</a></p>
+<p align="center"><b>Agentic intelligence · Robotic perception · Evidence-grounded systems</b></p>
+<p align="center"><a href="#research-and-engineering">Research</a> · <a href="#contribution-history">Contributions</a> · <a href="#technical-stack">Stack</a> · <a href="#open-source-and-impact">Open source</a> · <a href="#research-challenge">Interactive challenge</a></p>
 
-Agentic AI engineer and applied researcher working across **intelligent agents, robotic perception, state estimation, clinical AI, and production infrastructure**. I build systems where evidence, reproducibility, and engineering constraints are first-class.
+<table><tr><td width="52%" valign="top">
 
-<img src="./assets/visuals/atlas-overview.svg" alt="Live public GitHub statistics, original repositories, stars and followers" width="100%">
+### Research and engineering
 
-## Engineering atlas
+I design and evaluate agentic AI, SLAM and navigation, physics-informed estimation, and clinical reasoning systems. My emphasis is on measurable performance, provenance, and maintainable infrastructure.
 
-<img src="./assets/visuals/atlas-stack.svg" alt="Spatial technical stack: model intelligence, robotic perception, retrieval and knowledge, systems engineering" width="100%">
+**Research questions**
+- How can agents retain and generalize knowledge across tasks?
+- How can learned estimation remain consistent with physical constraints?
+- How can clinical AI expose its evidence and uncertainty?
 
-<details><summary><b>Architecture and methodology</b></summary>
+[Explore repositories](https://github.com/Armanasq?tab=repositories) · [Research evidence](./docs/ARCHITECTURE.md)
 
-- **Reasoning and agents:** Structured planning, multi-turn state, tool execution, model serving and evaluation.
-- **Robotic intelligence:** SLAM, inertial attitude estimation, navigation and physics-informed learning.
-- **Knowledge systems:** SQL-first evidence retrieval, traceable sources, and clinical decision support.
-- **Engineering:** Python, model deployment, CUDA, Docker, backend APIs and automated testing.
+</td><td width="48%" valign="top">
 
-Technology names describe areas of work; they are not certification or proficiency claims.
+<img src="./assets/visuals/atlas-overview.svg" alt="Verified public GitHub statistics" width="100%">
+
+</td></tr></table>
+
+## Contribution history
+
+<img src="./assets/visuals/atlas-contributions.svg" alt="Verified isometric GitHub contribution intensity" width="100%">
+
+<sub>Daily intensity levels are sourced from GitHub's public contribution calendar; no exact commit counts are inferred. [Calendar data](./data/contributions.json).</sub>
+
+## Technical stack
+
+<table><tr><td width="50%" valign="top">
+
+**Machine learning and inference**
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square" alt="Python" height="24"> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square" alt="PyTorch" height="24"> <img src="https://img.shields.io/badge/Transformers-7957D5?style=flat-square" alt="Transformers" height="24"> <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square" alt="CUDA" height="24"> <img src="https://img.shields.io/badge/vLLM-34495E?style=flat-square" alt="vLLM" height="24">
+
+**Robotics and state estimation**
+
+<img src="https://img.shields.io/badge/SLAM-2563EB?style=flat-square" alt="SLAM" height="24"> <img src="https://img.shields.io/badge/ROS-22314E?style=flat-square" alt="ROS" height="24"> <img src="https://img.shields.io/badge/IMU-0E7490?style=flat-square" alt="IMU" height="24"> <img src="https://img.shields.io/badge/VQF-5B21B6?style=flat-square" alt="VQF" height="24"> <img src="https://img.shields.io/badge/Navigation-1D4ED8?style=flat-square" alt="Navigation" height="24">
+
+</td><td width="50%" valign="top">
+
+**Retrieval and evidence**
+
+<img src="https://img.shields.io/badge/SQL-336791?style=flat-square" alt="SQL" height="24"> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square" alt="SQLite" height="24"> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square" alt="PostgreSQL" height="24"> <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square" alt="RAG" height="24"> <img src="https://img.shields.io/badge/FTS-0F766E?style=flat-square" alt="FTS" height="24">
+
+**Engineering and deployment**
+
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square" alt="Docker" height="24"> <img src="https://img.shields.io/badge/Linux-2F3134?style=flat-square" alt="Linux" height="24"> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square" alt="FastAPI" height="24"> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square" alt="GitHub Actions" height="24"> <img src="https://img.shields.io/badge/APIs-475569?style=flat-square" alt="APIs" height="24">
+
+</td></tr></table>
+
+<details><summary><b>Explore the spatial engineering architecture</b></summary>
+
+<img src="./assets/visuals/atlas-stack.svg" alt="Spatial map of engineering disciplines" width="100%">
 
 </details>
 
-## Contribution landscape
+## Open source and impact
 
-<img src="./assets/visuals/atlas-contributions.svg" alt="Source-backed 3D isometric contribution terrain showing GitHub daily intensity levels" width="100%">
+<table><tr><td width="50%" valign="top">
 
-<sub>Each tile represents a GitHub calendar day. Heights encode published contribution *levels*, not exact commit counts. [Source data](./data/contributions.json) · [Generator](./scripts/render_profile_art.py)</sub>
+<img src="./assets/metrics/engineering.svg" width="100%" alt="Lowlighter engineering and language metrics">
 
-## Research portfolio
+<img src="./assets/metrics/chronicle.svg" width="100%" alt="Lowlighter isometric calendar and activity">
 
-<img src="./assets/visuals/atlas-projects.svg" alt="Three-dimensional project skyline based on public GitHub repository stars" width="100%">
+</td><td width="50%" valign="top">
 
-<details><summary><b>Open the public project index</b></summary>
+<img src="./assets/metrics/recognition.svg" width="100%" alt="Lowlighter achievements and notable contributions">
 
-| Project | Research area | Repository |
+<img src="./assets/metrics/ecosystem.svg" width="100%" alt="Lowlighter open-source ecosystem and topics">
+
+</td></tr></table>
+
+<details><summary><b>More metrics: language distribution, project skyline, evidence and provenance</b></summary>
+
+<img src="./assets/visuals/atlas-languages.svg" width="100%" alt="Primary languages by repository">
+<img src="./assets/visuals/atlas-projects.svg" width="100%" alt="Isometric skyline of public repositories">
+<img src="./assets/live/readiness.svg" width="100%" alt="Public repository evidence matrix">
+<img src="./assets/live/lineage.svg" width="100%" alt="Source lineage and freshness">
+
+</details>
+
+### Public research repositories
+
+<!-- featured:start -->
+| Repository | Research area | Stars |
+|:--|:--|--:|
+| [End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) | Inertial state estimation | 65 |
+| [TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) | Physics-informed learning | 10 |
+| [The-Health-and-Medicine-OxML-competition-track](https://github.com/Armanasq/The-Health-and-Medicine-OxML-competition-track) | Medical AI | 5 |
+| [OpenSLAM](https://github.com/Armanasq/OpenSLAM) | Robotics and mapping | 4 |
+| [Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation) | Navigation research | 3 |
+| [Deep-VO](https://github.com/Armanasq/Deep-VO) | Visual odometry | 1 |
+<!-- featured:end -->
+
+### Recent public activity
+
+<!-- activity:start -->
+| Date (UTC) | Activity | Repository |
 |:--|:--|:--|
-| TE-PINN | Physics-informed orientation estimation | [Source](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) |
-| IMU attitude estimation | Deep learning and inertial navigation | [Source](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) |
-| OpenSLAM | Mapping and robotic localization | [Source](https://github.com/Armanasq/OpenSLAM) |
-| Deep-VO | Visual odometry | [Source](https://github.com/Armanasq/Deep-VO) |
-| Medical image segmentation | Clinical computer vision | [Source](https://github.com/Armanasq/3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation) |
-| PhD Tracker | Research operations | [Source](https://github.com/Armanasq/phd_tracker) |
+| 2026-11-09 | Issue: assigned | [Armanasq/phd_tracker](https://github.com/Armanasq/phd_tracker) |
+| 2026-11-09 | Issue: opened | [Armanasq/phd_tracker](https://github.com/Armanasq/phd_tracker) |
+| 2026-11-09 | Pull request: merged | [Armanasq/phd_tracker](https://github.com/Armanasq/phd_tracker) |
+| 2026-11-09 | Pull request: opened | [Armanasq/phd_tracker](https://github.com/Armanasq/phd_tracker) |
+| 2026-11-09 | Pull request: merged | [Armanasq/phd_tracker](https://github.com/Armanasq/phd_tracker) |
+<!-- activity:end -->
 
-</details>
+<sub>Tables are generated from the public GitHub API; private work and unverified achievements are excluded.</sub>
 
-## Open-source intelligence
+## Research challenge
 
-<img src="./assets/visuals/atlas-languages.svg" alt="Primary languages by count of public repositories" width="100%">
+**Interactive research decision: which experimental failure would you investigate first?**
 
-<table><tr><td width="50%" valign="top"><img src="./assets/metrics/engineering.svg" width="100%" alt="Lowlighter language and engineering metrics"><img src="./assets/metrics/chronicle.svg" width="100%" alt="Lowlighter isometric calendar and activity"></td><td width="50%" valign="top"><img src="./assets/metrics/recognition.svg" width="100%" alt="Lowlighter achievements and recognition"><img src="./assets/metrics/ecosystem.svg" width="100%" alt="Lowlighter repository ecosystem and community"></td></tr></table>
+Choose a hypothesis to open a prefilled GitHub Issue. A GitHub Actions workflow records and tallies valid choices. No JavaScript or external account is required beyond GitHub.
 
-<sub>Metrics panels fall back to independently sourced public-GitHub visualizations if upstream rendering is unavailable. They are not substituted with invented achievements.</sub>
+[**A · Data leakage / invalid split**](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20A&body=Hypothesis%3A%20Data%20leakage%20or%20invalid%20evaluation%20split) · [**B · Distribution shift**](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20B&body=Hypothesis%3A%20Distribution%20shift) · [**C · Baseline mismatch**](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20C&body=Hypothesis%3A%20Baseline%20mismatch)
 
-<details><summary><b>Research evidence, recent events, and provenance</b></summary>
+<img src="./assets/interactive/research-challenge.svg" width="100%" alt="Public vote tally for the research challenge">
 
-<img src="./assets/live/readiness.svg" width="100%" alt="Repository documentation, tests, workflow and citation evidence matrix">
-<img src="./assets/live/activity.svg" width="100%" alt="Verified recent GitHub activity">
-<img src="./assets/live/lineage.svg" width="100%" alt="Source provenance and snapshot freshness">
-
-</details>
+<sub>Votes are counted from Issues titled exactly `Research challenge: A`, `Research challenge: B`, or `Research challenge: C`. This is an opinion poll, not an empirical result. [Implementation](./scripts/research_challenge.py).</sub>
 
 ## Selected research
 
@@ -66,8 +128,6 @@ Technology names describe areas of work; they are not certification or proficien
 - [Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation)
 - [TE-PINN: Transformer-Enhanced Physics-Informed Neural Network for Quaternion Orientation Estimation](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation)
 
----
-
 **Evidence before interpretation · Baselines before novelty · Engineering beyond demonstrations**
 
-[GitHub](https://github.com/Armanasq) · [Research evidence](./docs/ARCHITECTURE.md) · [Data provenance](./data/public-snapshot.json)
+[Public data](./data/public-snapshot.json) · [Automation](./.github/workflows/profile.yml) · [Implementation notes](./docs/PROFILE_FEATURES.md)

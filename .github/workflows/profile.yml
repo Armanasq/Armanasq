@@ -11,6 +11,9 @@ on:
       - ".github/workflows/profile.yml"
       - "scripts/profile_refresh.py"
       - "tests/test_profile_refresh.py"
+      - "tests/test_profile_integrations.py"
+      - "scripts/update_profile_readme.py"
+      - "scripts/research_challenge.py"
       - "config/featured.json"
 
 permissions:
@@ -45,6 +48,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           python scripts/profile_refresh.py --user Armanasq --config config/featured.json --out assets/live --snapshot data/public-snapshot.json
+
+      - name: Update README project and activity sections
+        run: python scripts/update_profile_readme.py --readme README.md --snapshot data/public-snapshot.json
+
+      - name: Refresh public research challenge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/research_challenge.py --output assets/interactive/research-challenge.svg
 
       - name: Generate isometric visual assets
         env:
@@ -81,7 +92,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/live/ assets/metrics/ assets/visuals/ data/public-snapshot.json data/contributions.json
+          git add README.md assets/live/ assets/metrics/ assets/visuals/ assets/interactive/ data/public-snapshot.json data/contributions.json
           git diff --cached --check
           if ! git diff --cached --quiet; then
             git commit -m "chore(profile): refresh verified public telemetry [skip ci]"
