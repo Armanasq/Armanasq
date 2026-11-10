@@ -1,59 +1,43 @@
-<p align="center"><img src="./assets/visuals/atlas-hero.svg" alt="Arman Asgharpoor Golroudbari — research engineering" width="100%"></p>
+<p align="center"><img src="./assets/visuals/atlas-hero.svg" width="100%" alt="Arman — research engineering, agentic intelligence and robotics"></p>
 
-<p align="center"><b>Agentic intelligence · Robotic perception · Evidence-grounded systems</b></p>
-<p align="center"><a href="#research-and-engineering">Research</a> · <a href="#contribution-history">Contributions</a> · <a href="#technical-stack">Stack</a> · <a href="#open-source-and-impact">Open source</a> · <a href="#research-challenge">Interactive challenge</a></p>
+<p align="center"><b>Research systems, not demonstrations.</b><br>Agentic reasoning · Robotics and navigation · Physics-informed learning · Evidence-grounded AI</p>
 
-### Research and engineering
+<p align="center"><a href="#research-systems">Research systems</a> · <a href="#open-research">Open research</a> · <a href="#engineering-signals">Engineering signals</a> · <a href="#research-experiment">Experiment</a></p>
 
-I design and evaluate agentic AI, SLAM and navigation, physics-informed estimation, and clinical reasoning systems. My emphasis is on measurable performance, provenance, and maintainable infrastructure.
+## Research systems
 
-<img src="./assets/visuals/atlas-overview.svg" alt="Verified public GitHub statistics" width="100%">
+A connected research practice spanning autonomous reasoning, embodied state estimation, and evidence-grounded decision systems. The diagram below distinguishes **research directions**, **methods**, and **evaluation obligations**; it is a conceptual map, not a claim of completed experimental results.
 
-**Research questions:** How can agents generalize across tasks? How can learned state estimation respect physical constraints? How can clinical AI expose evidence and uncertainty?
+<a href="./docs/RESEARCH_SYSTEMS.md"><img src="./assets/visuals/research-systems.svg" width="100%" alt="Research systems: agentic reasoning, physical estimation and evidence-grounded decisions connected by evaluation, provenance and deployment"></a>
 
-[Explore repositories](https://github.com/Armanasq?tab=repositories) · [Research evidence](./docs/ARCHITECTURE.md)
+| Research direction | Engineering question | Primary evidence |
+|:--|:--|:--|
+| **Agentic reasoning** | How can agents transfer and retain knowledge across tasks? | [APEX-G](https://github.com/Armanasq/APEX-G) |
+| **Robotic perception** | How can estimation respect sensor and physical constraints? | [6DoF IMU research](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU) |
+| **Physics-informed learning** | How should learned dynamics and geometric constraints interact? | [TE-PINN](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation) |
+| **Research tooling** | How can research decisions be traceable and reproducible? | [PhD Tracker](https://github.com/Armanasq/phd_tracker) |
 
-## Contribution history
+<details><summary><b>Methods and infrastructure</b></summary>
 
-<img src="./assets/visuals/atlas-contributions.svg" alt="Verified isometric GitHub contribution intensity" width="100%">
+**Learning:** PyTorch, Transformers, model serving, inference optimization
 
-<sub>Daily intensity levels are sourced from GitHub's public contribution calendar; no exact commit counts are inferred. [Calendar data](./data/contributions.json).</sub>
+**Robotics:** IMU, SLAM, state estimation, orientation and navigation
 
-## Technical stack
+**Evidence:** SQL, structured retrieval, provenance, experimental baselines
 
-**Machine learning and inference**
+**Systems:** Python, FastAPI, Docker, Linux, GitHub Actions
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,linux,docker,fastapi,postgres,githubactions&theme=dark" alt="Python, PyTorch, Linux, Docker, FastAPI, PostgreSQL and GitHub Actions" width="100%">
-
-**Robotics and state estimation:** SLAM · IMU · VQF · navigation · quaternion estimation
-
-**Retrieval and evidence:** SQL · SQLite · PostgreSQL · FTS · RAG · provenance
-
-**Inference and orchestration:** Transformers · CUDA · vLLM · custom Python agent systems
-
-<sub>Icon source: [tandpfun/skill-icons](https://github.com/tandpfun/skill-icons). Additional research areas are listed as text to avoid misleading icon substitutions.</sub>
-
-<details><summary><b>Explore the spatial engineering architecture</b></summary>
-
-<img src="./assets/visuals/atlas-stack.svg" alt="Spatial map of engineering disciplines" width="100%">
+<img src="./assets/visuals/atlas-stack.svg" width="100%" alt="Spatial engineering stack">
 
 </details>
 
-## Open source and impact
+## Open research
 
-<p align="center"><img src="./assets/metrics/engineering.svg" width="49%" alt="Language and engineering metrics"> <img src="./assets/metrics/chronicle.svg" width="49%" alt="Contribution calendar and activity"></p>
-<p align="center"><img src="./assets/metrics/recognition.svg" width="49%" alt="Recognition and notable contributions"> <img src="./assets/metrics/ecosystem.svg" width="49%" alt="Open-source topics and ecosystem"></p>
+<img src="./assets/visuals/atlas-contributions.svg" width="100%" alt="Isometric GitHub contribution intensity based on verified public calendar levels">
 
-<details><summary><b>More metrics: language distribution, project skyline, evidence and provenance</b></summary>
+<sub>Visual height represents GitHub contribution **intensity levels**, not exact daily commit counts. [Source data](./data/contributions.json).</sub>
 
-<img src="./assets/visuals/atlas-languages.svg" width="100%" alt="Primary languages by repository">
-<img src="./assets/visuals/atlas-projects.svg" width="100%" alt="Isometric skyline of public repositories">
-<img src="./assets/live/readiness.svg" width="100%" alt="Public repository evidence matrix">
-<img src="./assets/live/lineage.svg" width="100%" alt="Source lineage and freshness">
-
-</details>
-
-### Public research repositories
+### Selected public repositories
 
 <!-- featured:start -->
 <table><tr><th>Repository</th><th>Research area</th><th>Stars</th></tr>
@@ -66,7 +50,7 @@ I design and evaluate agentic AI, SLAM and navigation, physics-informed estimati
 </table>
 <!-- featured:end -->
 
-### Recent public activity
+<details><summary><b>Recent verified public activity</b></summary>
 
 <!-- activity:start -->
 <table><tr><th>Date</th><th>Activity</th><th>Repository</th></tr>
@@ -78,44 +62,41 @@ I design and evaluate agentic AI, SLAM and navigation, physics-informed estimati
 </table>
 <!-- activity:end -->
 
-<sub>Tables are generated from the public GitHub API; private work and unverified achievements are excluded.</sub>
+[Source snapshot](./data/public-snapshot.json)
 
-## Live community signals
+</details>
 
-These panels use the original third-party rendering services, rather than custom-drawn substitutes. External services may be unavailable or rate-limited; the repository's [verified public snapshot](./data/public-snapshot.json) remains the fallback source.
+## Engineering signals
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Armanasq&theme=onedark&no-frame=true&column=4" width="100%" alt="GitHub profile trophies generated by github-profile-trophy"></a>
-</p>
+The core visuals below are **repository-hosted** and rendered by scheduled automation. The page does not depend on third-party image endpoints for its primary layout.
 
-<p align="center"><a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img src="https://streak-stats.demolab.com/?user=Armanasq&theme=github-dark-blue&hide_border=true" width="49%" alt="GitHub streak statistics"></a> <a href="https://github.com/Armanasq?tab=repositories"><img src="./assets/live/overview.svg" width="49%" alt="Verified repository snapshot"></a></p>
+<p align="center"><img src="./assets/live/overview.svg" width="100%" alt="Public repository activity and statistics"></p>
 
-### Contribution animation
+<details><summary><b>Detailed metrics and provenance</b></summary>
 
-[View contribution animation workflow](./.github/workflows/contribution-snake.yml) · [Check published assets](https://github.com/Armanasq/Armanasq/tree/output)
+<img src="./assets/metrics/engineering.svg" width="100%" alt="Engineering and language metrics">
+<img src="./assets/metrics/chronicle.svg" width="100%" alt="Contribution calendar metrics">
+<img src="./assets/metrics/recognition.svg" width="100%" alt="Public recognitions">
+<img src="./assets/metrics/ecosystem.svg" width="100%" alt="Open source ecosystem metrics">
+<img src="./assets/live/lineage.svg" width="100%" alt="Source provenance">
+<img src="./assets/live/readiness.svg" width="100%" alt="Repository evidence readiness">
 
-The animation is hidden until the output branch is successfully published, preventing a broken image in the profile.
+</details>
 
-<sub>Snake assets are generated by [Platane/snk](https://github.com/Platane/snk) and published to the `output` branch by [GitHub Actions](./.github/workflows/contribution-snake.yml). Until the first workflow succeeds, this image may be unavailable.</sub>
+## Research experiment
 
-## Research challenge
+**Which failure mode should a researcher investigate first when an apparently strong model fails to reproduce?**
 
-**Interactive research decision: which experimental failure would you investigate first?**
+| Hypothesis | Audit target |
+|:--|:--|
+| [A · Evaluation leakage](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20A) | Split boundaries, preprocessing leakage and duplicate samples |
+| [B · Distribution shift](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20B) | Domain, temporal and sensor shift |
+| [C · Baseline mismatch](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20C) | Preprocessing parity, compute budgets and metrics |
 
-Choose a hypothesis to open a prefilled GitHub Issue. A GitHub Actions workflow records and tallies valid choices. No JavaScript or external account is required beyond GitHub.
+<img src="./assets/interactive/research-challenge.svg" width="100%" alt="Public research challenge responses, counted once per GitHub account">
 
-[**A · Data leakage / invalid split**](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20A&body=Hypothesis%3A%20Data%20leakage%20or%20invalid%20evaluation%20split) · [**B · Distribution shift**](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20B&body=Hypothesis%3A%20Distribution%20shift) · [**C · Baseline mismatch**](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20C&body=Hypothesis%3A%20Baseline%20mismatch)
+<sub>Issue-driven opinion poll, not scientific evidence. [Counting logic](./scripts/research_challenge.py) · [Workflow](./.github/workflows/research-challenge.yml).</sub>
 
-<img src="./assets/interactive/research-challenge.svg" width="100%" alt="Public vote tally for the research challenge">
+---
 
-<sub>Votes are counted from Issues titled exactly `Research challenge: A`, `Research challenge: B`, or `Research challenge: C`. This is an opinion poll, not an empirical result. [Implementation](./scripts/research_challenge.py).</sub>
-
-## Selected research
-
-- [End-to-End Deep Learning Framework for Real-Time Inertial Attitude Estimation using 6DoF IMU](https://github.com/Armanasq/End-to-End-Deep-Learning-Framework-for-Real-Time-Inertial-Attitude-Estimation-using-6DoF-IMU)
-- [Recent Advancements in Deep Learning Applications and Methods for Autonomous Navigation](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation)
-- [TE-PINN: Transformer-Enhanced Physics-Informed Neural Network for Quaternion Orientation Estimation](https://github.com/Armanasq/TE-PINN-Transformer-Enhanced-Physics-Informed-Neural-Network-Quaternion-Orientation-Estimation)
-
-**Evidence before interpretation · Baselines before novelty · Engineering beyond demonstrations**
-
-[Public data](./data/public-snapshot.json) · [Automation](./.github/workflows/profile.yml) · [Implementation notes](./docs/PROFILE_FEATURES.md)
+<sub>[Research architecture](./docs/RESEARCH_SYSTEMS.md) · [Verified snapshot](./data/public-snapshot.json) · [Automation](./.github/workflows/profile.yml) · [Source integrations](./docs/UPSTREAM_INTEGRATIONS.md)</sub>
