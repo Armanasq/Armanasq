@@ -223,17 +223,17 @@
     {
       "count": 17,
       "date": "2025-12-25",
-      "level": 2
+      "level": 1
     },
     {
       "count": 26,
       "date": "2025-12-26",
-      "level": 2
+      "level": 1
     },
     {
       "count": 26,
       "date": "2025-12-27",
-      "level": 2
+      "level": 1
     },
     {
       "count": 14,
@@ -243,12 +243,12 @@
     {
       "count": 17,
       "date": "2025-12-29",
-      "level": 2
+      "level": 1
     },
     {
       "count": 22,
       "date": "2025-12-30",
-      "level": 2
+      "level": 1
     },
     {
       "count": 9,
@@ -773,7 +773,7 @@
     {
       "count": 19,
       "date": "2026-04-14",
-      "level": 2
+      "level": 1
     },
     {
       "count": 3,
@@ -978,7 +978,7 @@
     {
       "count": 19,
       "date": "2026-05-25",
-      "level": 2
+      "level": 1
     },
     {
       "count": 0,
@@ -1138,12 +1138,12 @@
     {
       "count": 29,
       "date": "2026-06-26",
-      "level": 2
+      "level": 1
     },
     {
       "count": 17,
       "date": "2026-06-27",
-      "level": 2
+      "level": 1
     },
     {
       "count": 7,
@@ -1203,12 +1203,12 @@
     {
       "count": 22,
       "date": "2026-07-09",
-      "level": 2
+      "level": 1
     },
     {
       "count": 67,
       "date": "2026-07-10",
-      "level": 4
+      "level": 2
     },
     {
       "count": 9,
@@ -1598,17 +1598,17 @@
     {
       "count": 22,
       "date": "2026-09-26",
-      "level": 2
+      "level": 1
     },
     {
       "count": 19,
       "date": "2026-09-27",
-      "level": 2
+      "level": 1
     },
     {
       "count": 18,
       "date": "2026-09-28",
-      "level": 2
+      "level": 1
     },
     {
       "count": 9,
@@ -1663,7 +1663,7 @@
     {
       "count": 23,
       "date": "2026-10-09",
-      "level": 2
+      "level": 1
     },
     {
       "count": 4,
@@ -1798,7 +1798,7 @@
     {
       "count": 40,
       "date": "2026-11-05",
-      "level": 3
+      "level": 2
     },
     {
       "count": 153,
@@ -1811,7 +1811,7 @@
       "level": 4
     },
     {
-      "count": 153,
+      "count": 157,
       "date": "2026-11-08",
       "level": 4
     },
@@ -1821,14 +1821,14 @@
       "level": 4
     },
     {
-      "count": 50,
+      "count": 332,
       "date": "2026-11-10",
-      "level": 3
+      "level": 4
     }
   ],
-  "generated_at_utc": "2026-11-10T05:39:38.327327+00:00",
+  "generated_at_utc": "2026-11-10T12:38:44.643482+00:00",
   "granularity": "daily-count",
   "source": "GitHub GraphQL contribution calendar",
   "status": "verified",
-  "total_reported": 2055
+  "total_reported": 2341
 }
