@@ -1,11 +1,6 @@
 {
   "days": [
     {
-      "count": 0,
-      "date": "2025-11-12",
-      "level": 0
-    },
-    {
       "count": 6,
       "date": "2025-11-13",
       "level": 1
@@ -1203,7 +1198,7 @@
     {
       "count": 67,
       "date": "2026-07-10",
-      "level": 2
+      "level": 1
     },
     {
       "count": 9,
@@ -1793,12 +1788,12 @@
     {
       "count": 40,
       "date": "2026-11-05",
-      "level": 2
+      "level": 1
     },
     {
       "count": 153,
       "date": "2026-11-06",
-      "level": 4
+      "level": 2
     },
     {
       "count": 309,
@@ -1808,7 +1803,7 @@
     {
       "count": 157,
       "date": "2026-11-08",
-      "level": 4
+      "level": 2
     },
     {
       "count": 605,
@@ -1821,14 +1816,19 @@
       "level": 4
     },
     {
-      "count": 40,
+      "count": 47,
       "date": "2026-11-11",
-      "level": 2
+      "level": 1
+    },
+    {
+      "count": 363,
+      "date": "2026-11-12",
+      "level": 4
     }
   ],
-  "generated_at_utc": "2026-11-11T11:51:54.692886+00:00",
+  "generated_at_utc": "2026-11-12T12:42:18.341020+00:00",
   "granularity": "daily-count",
   "source": "GitHub GraphQL contribution calendar",
   "status": "verified",
-  "total_reported": 2382
+  "total_reported": 2752
 }
