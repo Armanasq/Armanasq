@@ -2,11 +2,6 @@
   "days": [
     {
       "count": 1,
-      "date": "2025-11-21",
-      "level": 1
-    },
-    {
-      "count": 1,
       "date": "2025-11-22",
       "level": 1
     },
@@ -1824,11 +1819,16 @@
       "count": 35,
       "date": "2026-11-20",
       "level": 1
+    },
+    {
+      "count": 0,
+      "date": "2026-11-21",
+      "level": 0
     }
   ],
-  "generated_at_utc": "2026-11-20T12:52:35.309265+00:00",
+  "generated_at_utc": "2026-11-21T12:38:17.128658+00:00",
   "granularity": "daily-count",
   "source": "GitHub GraphQL contribution calendar",
   "status": "verified",
-  "total_reported": 3572
+  "total_reported": 3571
 }
