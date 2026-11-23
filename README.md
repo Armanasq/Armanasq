@@ -3,13 +3,19 @@
 <p align="center"><strong>Intelligence, grounded in systems.</strong></p>
 <p align="center">Agentic reasoning · Robotic perception · Physics-informed learning · Evidence-grounded AI</p>
 
-<p align="center"><a href="#research-constellation">Research constellation</a> · <a href="#scientific-signal">Scientific signal</a> · <a href="#research-chronicle">Chronicle</a> · <a href="#selected-systems">Selected systems</a></p>
+<p align="center"><a href="#research-constellation">Research constellation</a> · <a href="#contribution-streak">Contribution streak</a> · <a href="#scientific-signal">Scientific signal</a> · <a href="#research-chronicle">Chronicle</a> · <a href="#selected-systems">Selected systems</a></p>
 
 ## Research constellation
 
 An original research atlas of publicly verifiable projects. Each node links to its repository; connections represent curated research domains rather than inferred scientific citations.
 
 <a href="./docs/RESEARCH_ATLAS.md"><img src="./assets/visuals/research-constellation.svg" width="100%" alt="Research constellation of eight public projects, with research domains, GitHub stars and clickable repository nodes"></a>
+
+## Contribution streak
+
+<p align="center"><img src="./assets/visuals/streak.svg" width="100%" alt="GitHub contribution cadence: current streak, longest streak, active days, and recent contribution activity"></p>
+
+<sub>Computed from the [verified contribution calendar](./data/contributions.json). The longest streak covers the recorded period, not the entire account history. The snapshot date is embedded in the visual; activity refreshes through the existing [profile workflow](./.github/workflows/profile.yml).</sub>
 
 ## Scientific signal
 
