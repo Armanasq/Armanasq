@@ -15,19 +15,11 @@ An original research atlas of publicly verifiable projects. Each node links to i
 
 <p align="center"><img src="./assets/visuals/streak.svg" width="100%" alt="GitHub contribution cadence: current streak, longest streak, active days, and recent contribution activity"></p>
 
-<sub>Computed from the [verified contribution calendar](./data/contributions.json). The longest streak covers the recorded period, not the entire account history. The snapshot date is embedded in the visual; activity refreshes through the existing [profile workflow](./.github/workflows/profile.yml).</sub>
 
 ## Scientific signal
 
 <img src="./assets/visuals/scientific-signal.svg" width="100%" alt="Illustrative paired scientific trajectories; not experimental data">
 
-<sub>This visual establishes the research identity only. It is **not** a measured model result. Real reference-versus-prediction curves must be generated from verified experiment files.</sub>
-
-## Research chronicle
-
-<img src="./assets/visuals/research-chronicle.svg" width="100%" alt="Timeline of verified last-push dates for eight curated public repositories">
-
-<sub>Chronicle dates are repository push timestamps, not publication dates or scientific milestones. [Verified snapshot](./data/public-snapshot.json).</sub>
 
 ## Selected systems
 
@@ -41,48 +33,10 @@ An original research atlas of publicly verifiable projects. Each node links to i
 | [3D Attention U-Net](https://github.com/Armanasq/3D-Attention-U-Net-for-Multiple-Sclerosis-Lesion-Segmentation) | Medical imaging | 0 |
 | [Navigation review](https://github.com/Armanasq/Recent-Advancements-in-Deep-Learning-Applications-and-Methods-for-Autonomous-Navigation) | Navigation research | 3 |
 | [OxML Health](https://github.com/Armanasq/The-Health-and-Medicine-OxML-competition-track) | Medical AI | 5 |
-
-<details><summary><b>Research methods and infrastructure</b></summary>
-
-**Agentic AI:** planning, memory, metareasoning, evaluation
-
-**Robotics:** SLAM, IMU, state estimation, navigation, geometric constraints
-
-**Scientific AI:** physics-informed learning, experimental baselines, reproducibility
-
-**Systems:** Python, PyTorch, FastAPI, SQL, Docker, Linux, vLLM
-
-<img src="./assets/visuals/atlas-stack.svg" width="100%" alt="Engineering technology architecture">
-
-</details>
-
-<details><summary><b>Public GitHub contribution landscape</b></summary>
+<summary><b>Public GitHub contribution landscape</b></summary>
 
 <img src="./assets/visuals/atlas-contributions.svg" width="100%" alt="Contribution intensity levels derived from GitHub's public calendar">
 
-<sub>Levels are ordinal contribution intensity, not exact daily commit counts. [Source](./data/contributions.json).</sub>
-
-</details>
-
-<details><summary><b>Live engineering metrics and evidence</b></summary>
-
-<img src="./assets/live/overview.svg" width="100%" alt="Repository overview from GitHub public data">
-<img src="./assets/metrics/engineering.svg" width="100%" alt="Lowlighter language metrics">
-<img src="./assets/metrics/chronicle.svg" width="100%" alt="Lowlighter activity metrics">
-<img src="./assets/metrics/recognition.svg" width="100%" alt="Lowlighter recognition metrics">
-<img src="./assets/metrics/ecosystem.svg" width="100%" alt="Lowlighter ecosystem metrics">
-
-</details>
-
-## Research experiment
-
-When an apparently strong model fails to reproduce, which failure mode should be investigated first?
-
-[A · Evaluation leakage](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20A) · [B · Distribution shift](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20B) · [C · Baseline mismatch](https://github.com/Armanasq/Armanasq/issues/new?title=Research%20challenge%3A%20C)
-
-<img src="./assets/interactive/research-challenge.svg" width="100%" alt="Public GitHub Issues poll tally">
-
-<sub>GitHub Issues-driven opinion poll, not experimental evidence. [Implementation](./scripts/research_challenge.py).</sub>
 
 ---
 
