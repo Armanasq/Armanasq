@@ -10,6 +10,8 @@ on:
     paths:
       - ".github/workflows/profile.yml"
       - "scripts/profile_refresh.py"
+      - "scripts/streak_card.py"
+      - "tests/test_streak_card.py"
       - "tests/test_profile_refresh.py"
       - "tests/test_profile_integrations.py"
       - "scripts/update_profile_readme.py"
@@ -62,6 +64,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           python scripts/render_profile_art.py --snapshot data/public-snapshot.json --contributions data/contributions.json --output assets/visuals
+          python scripts/streak_card.py --contributions data/contributions.json --output assets/visuals/streak.svg
 
       - name: Validate generated SVG and JSON
         run: |
@@ -78,6 +81,7 @@ jobs:
               ET.parse(file)
           for file in sorted(Path("assets/visuals").glob("*.svg")):
               ET.parse(file)
+          assert Path("assets/visuals/streak.svg").is_file()
           contributions = json.loads(Path("data/contributions.json").read_text())
           if contributions.get("status") == "verified":
               assert len(contributions.get("days", [])) >= 300
